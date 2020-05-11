@@ -1,0 +1,55 @@
+/*================================================================================
+	Item Name: Stack - Responsive Admin Theme
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+html body {
+    background-color: #f5f8fa;
+}
+
+.table th, .table td {
+    padding: 10px;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+    padding: 6px 12px;
+}
+
+.header-navbar .navbar-header .navbar-brand .brand-logo {
+    vertical-align: bottom;
+    max-height: 30px;
+}
+
+.header-navbar .navbar-header .navbar-brand .brand-text {
+    vertical-align: bottom;
+    max-height: 30px;
+}
+
+.navbar-dark {
+    background: #32465a;
+}
+
+.main-menu.menu-light .navigation li a {
+    color: #32465a;
+    font-weight: 500;
+}
+
+.main-menu.menu-light .navigation > li.open {
+    border-left: 4px solid #00a5bc;
+}
+
+body.vertical-layout.vertical-menu.menu-expanded .main-menu .navigation > li > a > i {
+    width: 20px;
+    text-align: center;
+}
+
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .navigation > li > a, body.vertical-layout.vertical-menu.menu-collapsed .main-menu .navigation > li.open > a {
+    padding: 10px 0px !important;
+    text-align: center;
+}
