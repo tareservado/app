@@ -7,7 +7,7 @@
     Author URL: http://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
 // custom colors declaration
-var $primary = "#00b5b8",
+var $primary = "#179bad",
   $secondary = "#2c3648",
   $success = "#0f8e67",
   $info = "#179bad",
@@ -18,7 +18,7 @@ var $themeColor = [$primary, $success, $warning, $info, $danger, $secondary]
 
 var lineBasicChart = {
   chart: {
-    height: 200,
+    height: 250,
     type: 'area',
     toolbar: {
       show: false
@@ -780,81 +780,25 @@ function generateDataHeat(count, yrange) {
 
 var heatmapBasicChart = {
   chart: {
-    height: 350,
+    height: 250,
     type: 'heatmap',
+    toolbar: {
+      show: false
+    }
   },
   dataLabels: {
     enabled: false
   },
   colors: [$primary],
-  series: [{
-      name: 'Metric1',
-      data: generateDataHeat(18, {
-        min: 0,
-        max: 90
-      })
-    },
-    {
-      name: 'Metric2',
-      data: generateDataHeat(18, {
-        min: 0,
-        max: 90
-      })
-    },
-    {
-      name: 'Metric3',
-      data: generateDataHeat(18, {
-        min: 0,
-        max: 90
-      })
-    },
-    {
-      name: 'Metric4',
-      data: generateDataHeat(18, {
-        min: 0,
-        max: 90
-      })
-    },
-    {
-      name: 'Metric5',
-      data: generateDataHeat(18, {
-        min: 0,
-        max: 90
-      })
-    },
-    {
-      name: 'Metric6',
-      data: generateDataHeat(18, {
-        min: 0,
-        max: 90
-      })
-    },
-    {
-      name: 'Metric7',
-      data: generateDataHeat(18, {
-        min: 0,
-        max: 90
-      })
-    },
-    {
-      name: 'Metric8',
-      data: generateDataHeat(18, {
-        min: 0,
-        max: 90
-      })
-    },
-    {
-      name: 'Metric9',
-      data: generateDataHeat(18, {
-        min: 0,
-        max: 90
-      })
-    }
-  ],
-  title: {
-    text: 'HeatMap Chart (Single color)'
-  },
-
+  series: [
+    {name: 'dom', data: [{x: '08', y: 5}, {x: '09', y: 6}, {x: '10', y: 7}, {x: '11', y: 8}, {x: '12', y: 12}, {x: '13', y: 13}, {x: '14', y: 15}, {x: '15', y: 16}, {x: '16', y: 18}, {x: '17', y: 20}, {x: '18', y: 12}, {x: '19', y: 5}, {x: '20', y: 8}]},
+    {name: 'seg', data: [{x: '08', y: 10}, {x: '09', y: 15}, {x: '10', y: 18}, {x: '11', y: 19}, {x: '12', y: 25}, {x: '13', y: 23}, {x: '14', y: 16}, {x: '15', y: 21}, {x: '16', y: 15}, {x: '17', y: 12}, {x: '18', y: 18}, {x: '19', y: 22}, {x: '20', y: 20}]},
+    {name: 'ter', data: [{x: '08', y: 9}, {x: '09', y: 13}, {x: '10', y: 18}, {x: '11', y: 22}, {x: '12', y: 25}, {x: '13', y: 32}, {x: '14', y: 16}, {x: '15', y: 18}, {x: '16', y: 23}, {x: '17', y: 23}, {x: '18', y: 15}, {x: '19', y: 18}, {x: '20', y: 21}]},
+    {name: 'qua', data: [{x: '08', y: 7}, {x: '09', y: 15}, {x: '10', y: 20}, {x: '11', y: 19}, {x: '12', y: 23}, {x: '13', y: 28}, {x: '14', y: 20}, {x: '15', y: 21}, {x: '16', y: 15}, {x: '17', y: 24}, {x: '18', y: 22}, {x: '19', y: 22}, {x: '20', y: 26}]},
+    {name: 'qui', data: [{x: '08', y: 8}, {x: '09', y: 14}, {x: '10', y: 17}, {x: '11', y: 24}, {x: '12', y: 25}, {x: '13', y: 24}, {x: '14', y: 22}, {x: '15', y: 18}, {x: '16', y: 24}, {x: '17', y: 12}, {x: '18', y: 18}, {x: '19', y: 22}, {x: '20', y: 15}]},
+    {name: 'sex', data: [{x: '08', y: 10}, {x: '09', y: 15}, {x: '10', y: 18}, {x: '11', y: 19}, {x: '12', y: 29}, {x: '13', y: 23}, {x: '14', y: 16}, {x: '15', y: 18}, {x: '16', y: 33}, {x: '17', y: 21}, {x: '18', y: 25}, {x: '19', y: 24}, {x: '20', y: 20}]},
+    {name: 'sab', data: [{x: '08', y: 6}, {x: '09', y: 6}, {x: '10', y: 7}, {x: '11', y: 8}, {x: '12', y: 12}, {x: '13', y: 13}, {x: '14', y: 15}, {x: '15', y: 16}, {x: '16', y: 18}, {x: '17', y: 20}, {x: '18', y: 12}, {x: '19', y: 5}, {x: '20', y: 8}]},
+  ]
 }
 
 var pieSimpleChart = {

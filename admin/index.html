@@ -85,9 +85,9 @@
                                     </a>
                                     <a href="javascript:void(0)">
                                         <div class="media">
-                                            <div class="media-left align-self-center"><i class="fa fa-question-circle icon-bg-circle bg-yellow bg-darken-3"></i></div>
+                                            <div class="media-left align-self-center"><i class="fa fa-question-circle icon-bg-circle bg-amber"></i></div>
                                             <div class="media-body">
-                                                <h6 class="media-heading yellow darken-3">1 reserva aguardando aprovação</h6>
+                                                <h6 class="media-heading amber">1 reserva aguardando aprovação</h6>
                                                 <time class="media-meta text-muted font-small-3" datetime="2015-06-11T18:29:20+08:00">2 horas atrás</time></small>
                                             </div>
                                         </div>
@@ -123,11 +123,14 @@
                 <li class="nav-item open"><a href="#"><i class="fa fa-tachometer"></i><span class="menu-title">Painel Inicial</span></a></li>
                 <li class="nav-item"><a href="#"><i class="fa fa-calendar"></i><span class="menu-title">Agenda</span></a></li>
                 <li class="nav-item"><a href="#"><i class="fa fa-list-alt"></i><span class="menu-title">Reservas</span></a></li>
-                <li class="nav-item"><a href="#"><i class="fa fa-address-book-o"></i><span class="menu-title">Clientes</span></a></li>
-                <li class="nav-item"><a href="#"><i class="fa fa-building-o"></i><span class="menu-title">Empresa</span></a></li>               
-                <li class="nav-item"><a href="#"><i class="fa fa-users"></i><span class="menu-title">Equipe</span></a></li>
-                <li class="nav-item"><a href="#"><i class="fa fa-th-list"></i><span class="menu-title">Serviços</span></a></li>
-                <li class="nav-item"><a href="#"><i class="fa fa-laptop"></i><span class="menu-title">Site de Reserva</span></a></li>
+                <li class="nav-item"><a href="#"><i class="fa fa-pencil-square-o"></i><span class="menu-title">Gerenciar</span></a>                    
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="#">Empresa</a></li>
+                        <li><a class="menu-item" href="#">Equipe</a></li>
+                        <li><a class="menu-item" href="#">Serviços</a></li>
+                        <li><a class="menu-item" href="#">Site de Reserva</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a href="#"><i class="fa fa-pie-chart"></i><span class="menu-title">Relatórios</span></a></li>
                 <li class="nav-item"><a href="#"><i class="fa fa-cogs"></i><span class="menu-title">Configurações</span></a></li>            
                 <li class="nav-item"><a href="#"><i class="fa fa-credit-card"></i><span class="menu-title">Planos e Preços</span></a></li>            
@@ -142,23 +145,23 @@
         <div class="content-overlay"></div>
         <div class="content-wrapper">
             <div class="content-header row">
-                <h1 class="h5 font-weight-bolder pb-0 pl-1">Segunda-feira, 11 de maio de 2020.</h1>
+                <h1 class="h5 font-weight-bolder pb-0 pl-1">Segunda-feira, 11 de maio de 2020</h1>
             </div>
             <div class="content-body">
 
-                <div class="row match-height">
+                <div class="row match-height mb-1">
                     <div class="col-xl-3 col-sm-6 col-12 p-1">
                         <div class="card mb-0">
                             <div class="card-content">
                                 <div class="card-body">
                                     <div class="media d-flex">
                                         <div class="media-body text-left">
-                                            <h3 class="warning">6 reservas</h3>
+                                            <h3 class="amber">6 reservas</h3>
                                             <span>Para aprovar</span><br>
-                                            <button type="button" class="btn btn-outline-warning btn-sm mt-1">ver reservas</button>
+                                            <button type="button" class="btn btn-outline-amber btn-sm mt-1">ver reservas</button>
                                         </div>
                                         <div class="align-self-top">
-                                            <i class="fa fa-calendar-plus-o warning font-large-2 float-right"></i>
+                                            <i class="fa fa-calendar-plus-o amber font-large-2 float-right"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -189,12 +192,12 @@
                                 <div class="card-body">
                                     <div class="media d-flex">
                                         <div class="media-body text-left">
-                                            <h3 class="primary">47 reservas</h3>
+                                            <h3 class="teal">47 reservas</h3>
                                             <span>Últimos 7 dias</span><br>
-                                            <button type="button" class="btn btn-outline-primary btn-sm mt-1">ver reservas</button>
+                                            <button type="button" class="btn btn-outline-teal btn-sm mt-1">ver reservas</button>
                                         </div>
                                         <div class="align-self-top">
-                                            <i class="fa fa-calendar primary font-large-2 float-right"></i>
+                                            <i class="fa fa-calendar teal font-large-2 float-right"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -207,12 +210,12 @@
                                 <div class="card-body">
                                     <div class="media d-flex">
                                         <div class="media-body text-left">
-                                            <h3 class="cyan">29 clientes</h3>
+                                            <h3 class="blue">29 clientes</h3>
                                             <span>Últimos 7 dias</span><br>
-                                            <button type="button" class="btn btn-outline-cyan btn-sm mt-1">ver clientes</button>
+                                            <button type="button" class="btn btn-outline-blue btn-sm mt-1">ver clientes</button>
                                         </div>
                                         <div class="align-self-top">
-                                            <i class="fa fa-address-book-o cyan font-large-2 float-right"></i>
+                                            <i class="fa fa-address-book-o blue font-large-2 float-right"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -221,8 +224,8 @@
                     </div>
                 </div>
 
-                <div class="row match-height mt-1">
-                    <div class="col-12 col-md-6">
+                <div class="row match-height">
+                    <div class="col-xl-6 col-lg-12">
                         <!-- Line Basic Chart Start -->
                         <div class="card">
                             <div class="card-body">
@@ -233,6 +236,22 @@
                         <!-- line basic chart end -->
                     </div>
                     <div class="col-xl-6 col-lg-12">
+                        <!-- Heatmap Basic Chart Start -->
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">Reservas por horário do dia</div>
+                                <div id="heatmap-basic-chart"></div>
+                            </div>
+                        </div>
+                        <!-- Heatmap Basic Chart end -->
+                    </div>
+                </div>
+
+                <div class="row match-height">
+                    <div class="col-12 col-md-6">
+                       
+                    </div>
+                    <div class="col-12">
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Reservas Recentes</h4>
@@ -251,40 +270,94 @@
                                             <tr>
                                                 <th>Codigo</th>
                                                 <th>Cliente</th>
-                                                <th>Status</th>
-                                                <th>Data/Hora</th>
+                                                <th>Profissional</th>
+                                                <th>Serviço</th>
+                                                <th>Reserva</th>
+                                                <th>Data</th>
+                                                <th>Hora</th>
+                                                <th>Ações</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td class="text-truncate">TR-10521</td>
-                                                <td class="text-truncate">Elizabeth W.</td>
+                                                <td class="text-truncate">Elizabeth Farias</td>
+                                                <td class="text-truncate">Joana Prado</td>
+                                                <td class="text-truncate">Corte Feminino</td>
+                                                <td class="text-truncate"><span class="badge badge-warning">Pendente</span></td>
+                                                <td class="text-truncate">08/05</td>
+                                                <td class="text-truncate">11:00</td>
+                                                <td class="text-truncate">
+                                                    <div class="btn-group" role="group">
+                                                        <button type="button" class="btn btn-icon btn-outline-success" title="Confirmar"><i class="fa fa-check"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-outline-primary" title="Reagendar"><i class="fa fa-retweet"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-outline-danger" title="Cancelar"><i class="fa fa-times"></i></button>
+                                                     </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-truncate">TR-10456</td>
+                                                <td class="text-truncate">Thais Araujo</td>
+                                                <td class="text-truncate">Marisa Montes</td>
+                                                <td class="text-truncate">Corte Feminino</td>
                                                 <td class="text-truncate"><span class="badge badge-success">Confirmada</span></td>
-                                                <td class="text-truncate">08/05 - 11:00</td>
+                                                <td class="text-truncate">08/05</td>
+                                                <td class="text-truncate">11:00</td>
+                                                <td class="text-truncate">
+                                                    <div class="btn-group" role="group">
+                                                        <button type="button" class="btn btn-icon btn-outline-success" title="Confirmar"><i class="fa fa-check"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-outline-primary" title="Reagendar"><i class="fa fa-retweet"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-outline-danger" title="Cancelar"><i class="fa fa-times"></i></button>
+                                                     </div>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td class="text-truncate">TR-532521</td>
-                                                <td class="text-truncate">Doris R.</td>
-                                                <td class="text-truncate"><span class="badge badge-warning">Aguardando</span></td>
-                                                <td class="text-truncate">07/05 - 09:00</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-truncate">TR-05521</td>
-                                                <td class="text-truncate">Andrew D.</td>
+                                                <td class="text-truncate">TR-10789</td>
+                                                <td class="text-truncate">Elias Maluco</td>
+                                                <td class="text-truncate">Sena</td>
+                                                <td class="text-truncate">Corte Masculino</td>
                                                 <td class="text-truncate"><span class="badge badge-success">Confirmada</span></td>
-                                                <td class="text-truncate">07/05 - 10:00</td>
+                                                <td class="text-truncate">08/05</td>
+                                                <td class="text-truncate">11:00</td>
+                                                <td class="text-truncate">
+                                                    <div class="btn-group" role="group">
+                                                        <button type="button" class="btn btn-icon btn-outline-success" title="Confirmar"><i class="fa fa-check"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-outline-primary" title="Reagendar"><i class="fa fa-retweet"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-outline-danger" title="Cancelar"><i class="fa fa-times"></i></button>
+                                                     </div>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td class="text-truncate">TR-15521</td>
-                                                <td class="text-truncate">Megan S.</td>
-                                                <td class="text-truncate"><span class="badge badge-success">Confirmada</span></td>
-                                                <td class="text-truncate">06/05 - 14:30</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-truncate">TR-32521</td>
-                                                <td class="text-truncate">Walter R.</td>
+                                                <td class="text-truncate">TR-10987</td>
+                                                <td class="text-truncate">Cássia Kiss</td>
+                                                <td class="text-truncate">Marcia Miranda</td>
+                                                <td class="text-truncate">Corte Feminino</td>
                                                 <td class="text-truncate"><span class="badge badge-danger">Cancelada</span></td>
-                                                <td class="text-truncate">06/05 - 16:00</td>
+                                                <td class="text-truncate">08/05</td>
+                                                <td class="text-truncate">11:00</td>
+                                                <td class="text-truncate">
+                                                    <div class="btn-group" role="group">
+                                                        <button type="button" class="btn btn-icon btn-outline-success" title="Confirmar"><i class="fa fa-check"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-outline-primary" title="Reagendar"><i class="fa fa-retweet"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-outline-danger" title="Cancelar"><i class="fa fa-times"></i></button>
+                                                     </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-truncate">TR-1043</td>
+                                                <td class="text-truncate">Paulinho da Viola</td>
+                                                <td class="text-truncate">Helio Fonseca</td>
+                                                <td class="text-truncate">Barba e Bigode</td>
+                                                <td class="text-truncate"><span class="badge badge-success">Confirmada</span></td>
+                                                <td class="text-truncate">08/05</td>
+                                                <td class="text-truncate">11:00</td>
+                                                <td class="text-truncate">
+                                                    <div class="btn-group" role="group">
+                                                        <button type="button" class="btn btn-icon btn-outline-success" title="Confirmar"><i class="fa fa-check"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-outline-primary" title="Reagendar"><i class="fa fa-retweet"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-outline-danger" title="Cancelar"><i class="fa fa-times"></i></button>
+                                                     </div>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>

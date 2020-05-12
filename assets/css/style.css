@@ -15,6 +15,11 @@ html body {
 
 .table th, .table td {
     padding: 10px;
+    vertical-align: middle;
+}
+
+#recent-orders .btn {
+    padding: 8px;
 }
 
 .btn-sm, .btn-group-sm > .btn {
