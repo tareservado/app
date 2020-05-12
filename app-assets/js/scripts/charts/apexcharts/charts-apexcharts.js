@@ -7,9 +7,9 @@
     Author URL: http://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
 // custom colors declaration
-var $primary = "#179bad",
+var $primary = "#00bda5",
   $secondary = "#2c3648",
-  $success = "#0f8e67",
+  $success = "#ff6e5a",
   $info = "#179bad",
   $warning = "#ffb997",
   $danger = "#ff8f9e"
@@ -789,7 +789,7 @@ var heatmapBasicChart = {
   dataLabels: {
     enabled: false
   },
-  colors: [$primary],
+  colors: [$success],
   series: [
     {name: 'dom', data: [{x: '08', y: 5}, {x: '09', y: 6}, {x: '10', y: 7}, {x: '11', y: 8}, {x: '12', y: 12}, {x: '13', y: 13}, {x: '14', y: 15}, {x: '15', y: 16}, {x: '16', y: 18}, {x: '17', y: 20}, {x: '18', y: 12}, {x: '19', y: 5}, {x: '20', y: 8}]},
     {name: 'seg', data: [{x: '08', y: 10}, {x: '09', y: 15}, {x: '10', y: 18}, {x: '11', y: 19}, {x: '12', y: 25}, {x: '13', y: 23}, {x: '14', y: 16}, {x: '15', y: 21}, {x: '16', y: 15}, {x: '17', y: 12}, {x: '18', y: 18}, {x: '19', y: 22}, {x: '20', y: 20}]},
