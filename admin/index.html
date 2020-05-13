@@ -38,13 +38,13 @@
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu 2-columns   fixed-navbar" data-open="click" data-menu="vertical-menu" data-col="2-columns">
+<body class="vertical-layout vertical-menu 2-columns fixed-navbar" data-open="click" data-menu="vertical-menu" data-col="2-columns">
 
     <!-- BEGIN: Header-->
-    <nav class="header-navbar navbar-expand-md navbar navbar-with-menu fixed-top navbar-dark bg-gradient-x-primary navbar-shadow">
+    <nav class="header-navbar navbar-expand-md navbar navbar-with-menu fixed-top navbar-dark shadow">
         <div class="navbar-wrapper">
             <div class="navbar-header">
-                <ul class="nav navbar-nav flex-row">
+                <ul class="nav navbar-nav flex-row align-items-center">
                     <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="feather icon-menu font-large-1"></i></a></li>
                     <li class="nav-item">
                         <a class="navbar-brand" href="#">
@@ -57,7 +57,7 @@
             </div>
             <div class="navbar-container content">
                 <div class="collapse navbar-collapse" id="navbar-mobile">
-                    <ul class="nav navbar-nav mr-auto float-left">
+                    <ul class="nav navbar-nav mr-auto float-left align-items-center">
                         <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="feather icon-menu"></i></a></li>
                         <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon feather icon-bell"></i><span class="badge badge-pill badge-danger badge-up">3</span></a>
                             <ul class="dropdown-menu dropdown-menu-media dropdown-menu-left p-0">
@@ -97,7 +97,10 @@
                             </ul>
                         </li>
                     </ul>
-                    <ul class="nav navbar-nav float-right">
+                    <ul class="nav navbar-nav float-right align-items-center">
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-success mr-1 btn-sm shadow"><i class="fa fa-plus-circle"></i>Criar reserva</button>
+                        </li>
                         <li class="dropdown dropdown-user nav-item">
                             <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
                                 <div class="avatar avatar-online"><img src="../app-assets/images/portrait/small/avatar-s-1.png" alt="avatar"><i></i></div><span class="user-name">John Doe</span>
@@ -117,16 +120,16 @@
 
 
     <!-- BEGIN: Main Menu-->
-    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+    <div class="main-menu menu-fixed menu-light menu-accordion shadow pt-1" data-scroll-to-active="true">
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class="nav-item open"><a href="#"><i class="fa fa-tachometer"></i><span class="menu-title">Painel Inicial</span></a></li>
+                <li class="nav-item open"><a href="index.html"><i class="fa fa-tachometer"></i><span class="menu-title">Painel Inicial</span></a></li>
                 <li class="nav-item"><a href="#"><i class="fa fa-calendar"></i><span class="menu-title">Agenda</span></a></li>
                 <li class="nav-item"><a href="#"><i class="fa fa-list-alt"></i><span class="menu-title">Reservas</span></a></li>
                 <li class="nav-item"><a href="#"><i class="fa fa-address-book-o"></i><span class="menu-title">Clientes</span></a></li>
                 <li class="nav-item"><a href="#"><i class="fa fa-pencil-square-o"></i><span class="menu-title">Gerenciar</span></a>                    
                     <ul class="menu-content">
-                        <li><a class="menu-item" href="#">Empresa</a></li>
+                        <li><a class="menu-item" href="empresa.html">Empresa</a></li>
                         <li><a class="menu-item" href="#">Equipe</a></li>
                         <li><a class="menu-item" href="#">Serviços</a></li>
                         <li><a class="menu-item" href="#">Site de Reserva</a></li>
@@ -146,10 +149,9 @@
         <div class="content-overlay"></div>
         <div class="content-wrapper">
             <div class="content-header row">
-                <h1 class="h5 font-weight-bolder pb-0 pl-1">Segunda-feira, 11 de maio de 2020</h1>
+                <h1 class="h5 font-weight-bolder pb-0 pl-1">Segunda-feira, 11 de maio de 2020</h1>                
             </div>
             <div class="content-body">
-
                 <div class="row match-height mb-1">
                     <div class="col-xl-3 col-sm-6 col-12 p-1">
                         <div class="card mb-0">
@@ -266,19 +268,19 @@
                                     <table id="recent-orders" class="table table-hover mb-0 ps-container ps-theme-default">
                                         <thead>
                                             <tr>
-                                                <th>Codigo</th>
+                                                <th class="pl-2">Codigo</th>
                                                 <th>Cliente</th>
                                                 <th>Profissional</th>
                                                 <th>Serviço</th>
                                                 <th>Reserva</th>
                                                 <th>Data</th>
                                                 <th>Hora</th>
-                                                <th>Ações</th>
+                                                <th></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td class="text-truncate">TR-10521</td>
+                                                <td class="text-truncate pl-2">TR-10521</td>
                                                 <td class="text-truncate">Elizabeth Farias</td>
                                                 <td class="text-truncate">Joana Prado</td>
                                                 <td class="text-truncate">Corte Feminino</td>
@@ -287,14 +289,14 @@
                                                 <td class="text-truncate">11:00</td>
                                                 <td class="text-truncate">
                                                     <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-icon btn-outline-success" title="Confirmar"><i class="fa fa-check"></i></button>
-                                                        <button type="button" class="btn btn-icon btn-outline-primary" title="Reagendar"><i class="fa fa-retweet"></i></button>
-                                                        <button type="button" class="btn btn-icon btn-outline-danger" title="Cancelar"><i class="fa fa-times"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-pure success" title="Confirmar"><i class="fa fa-check"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-pure primary" title="Reagendar"><i class="fa fa-retweet"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-pure danger" title="Cancelar"><i class="fa fa-times"></i></button>
                                                      </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="text-truncate">TR-10456</td>
+                                                <td class="text-truncate pl-2">TR-10456</td>
                                                 <td class="text-truncate">Thais Araujo</td>
                                                 <td class="text-truncate">Marisa Montes</td>
                                                 <td class="text-truncate">Corte Feminino</td>
@@ -303,14 +305,14 @@
                                                 <td class="text-truncate">11:00</td>
                                                 <td class="text-truncate">
                                                     <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-icon btn-outline-success" title="Confirmar"><i class="fa fa-check"></i></button>
-                                                        <button type="button" class="btn btn-icon btn-outline-primary" title="Reagendar"><i class="fa fa-retweet"></i></button>
-                                                        <button type="button" class="btn btn-icon btn-outline-danger" title="Cancelar"><i class="fa fa-times"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-pure success" title="Confirmar"><i class="fa fa-check"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-pure primary" title="Reagendar"><i class="fa fa-retweet"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-pure danger" title="Cancelar"><i class="fa fa-times"></i></button>
                                                      </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="text-truncate">TR-10789</td>
+                                                <td class="text-truncate pl-2">TR-10789</td>
                                                 <td class="text-truncate">Elias Maluco</td>
                                                 <td class="text-truncate">Sena</td>
                                                 <td class="text-truncate">Corte Masculino</td>
@@ -319,14 +321,14 @@
                                                 <td class="text-truncate">11:00</td>
                                                 <td class="text-truncate">
                                                     <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-icon btn-outline-success" title="Confirmar"><i class="fa fa-check"></i></button>
-                                                        <button type="button" class="btn btn-icon btn-outline-primary" title="Reagendar"><i class="fa fa-retweet"></i></button>
-                                                        <button type="button" class="btn btn-icon btn-outline-danger" title="Cancelar"><i class="fa fa-times"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-pure success" title="Confirmar"><i class="fa fa-check"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-pure primary" title="Reagendar"><i class="fa fa-retweet"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-pure danger" title="Cancelar"><i class="fa fa-times"></i></button>
                                                      </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="text-truncate">TR-10987</td>
+                                                <td class="text-truncate pl-2">TR-10987</td>
                                                 <td class="text-truncate">Cássia Kiss</td>
                                                 <td class="text-truncate">Marcia Miranda</td>
                                                 <td class="text-truncate">Corte Feminino</td>
@@ -335,14 +337,14 @@
                                                 <td class="text-truncate">11:00</td>
                                                 <td class="text-truncate">
                                                     <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-icon btn-outline-success" title="Confirmar"><i class="fa fa-check"></i></button>
-                                                        <button type="button" class="btn btn-icon btn-outline-primary" title="Reagendar"><i class="fa fa-retweet"></i></button>
-                                                        <button type="button" class="btn btn-icon btn-outline-danger" title="Cancelar"><i class="fa fa-times"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-pure success" title="Confirmar"><i class="fa fa-check"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-pure primary" title="Reagendar"><i class="fa fa-retweet"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-pure danger" title="Cancelar"><i class="fa fa-times"></i></button>
                                                      </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="text-truncate">TR-1043</td>
+                                                <td class="text-truncate pl-2">TR-1043</td>
                                                 <td class="text-truncate">Paulinho da Viola</td>
                                                 <td class="text-truncate">Helio Fonseca</td>
                                                 <td class="text-truncate">Barba e Bigode</td>
@@ -351,9 +353,9 @@
                                                 <td class="text-truncate">11:00</td>
                                                 <td class="text-truncate">
                                                     <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-icon btn-outline-success" title="Confirmar"><i class="fa fa-check"></i></button>
-                                                        <button type="button" class="btn btn-icon btn-outline-primary" title="Reagendar"><i class="fa fa-retweet"></i></button>
-                                                        <button type="button" class="btn btn-icon btn-outline-danger" title="Cancelar"><i class="fa fa-times"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-pure success" title="Confirmar"><i class="fa fa-check"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-pure primary" title="Reagendar"><i class="fa fa-retweet"></i></button>
+                                                        <button type="button" class="btn btn-icon btn-pure danger" title="Cancelar"><i class="fa fa-times"></i></button>
                                                      </div>
                                                 </td>
                                             </tr>

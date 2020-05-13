@@ -46,7 +46,19 @@ html body {
 }
 
 .main-menu.menu-light .navigation > li.open {
-    border-left: 4px solid #00a5bc;
+    border-left: 4px solid #ff6d5a;
+}
+
+.main-menu.menu-light .navigation > li ul .active > a {
+    color: #ff6d5a;;
+}
+
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content > span.menu-title, body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content a.menu-title {
+    background-color: #ff6d5a;;
+}
+
+.form-control:focus {
+    border-color: #32465A;
 }
 
 body.vertical-layout.vertical-menu.menu-expanded .main-menu .navigation > li > a > i {
