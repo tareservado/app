@@ -47,7 +47,7 @@
                 <ul class="nav navbar-nav flex-row align-items-center">
                     <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="feather icon-menu font-large-1"></i></a></li>
                     <li class="nav-item">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="index.html">
                             <img class="brand-logo" alt="stack admin logo" src="../app-assets/images/logo/icone.png">
                             <img class="brand-text p-0" alt="stack admin logo" src="../app-assets/images/logo/logo-nome.png">
                         </a>
@@ -99,7 +99,15 @@
                     </ul>
                     <ul class="nav navbar-nav float-right align-items-center">
                         <li class="nav-item">
-                            <button type="button" class="btn btn-success mr-1 btn-sm shadow"><i class="fa fa-plus-circle"></i>Criar reserva</button>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-outline-primary white mr-1 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-plus-circle"></i>Adicionar</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item font-small-3" href="#">Reserva</a>
+                                    <a class="dropdown-item font-small-3" href="#">Cliente</a>
+                                    <a class="dropdown-item font-small-3" href="add-profissional.html">Profissional</a>
+                                    <a class="dropdown-item font-small-3" href="#">Serviço</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="dropdown dropdown-user nav-item">
                             <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
@@ -130,8 +138,18 @@
                 <li class="nav-item"><a href="#"><i class="fa fa-pencil-square-o"></i><span class="menu-title">Gerenciar</span></a>                    
                     <ul class="menu-content">
                         <li><a class="menu-item" href="empresa.html">Empresa</a></li>
-                        <li><a class="menu-item" href="#">Equipe</a></li>
-                        <li><a class="menu-item" href="#">Serviços</a></li>
+                        <li><a class="menu-item" href="#">Equipe</a>
+                            <ul class="menu-content">
+                                <li><a class="menu-item" href="listar-profissional.html">Listar Profissionais</a></li>
+                                <li><a class="menu-item" href="add-profissional.html">Novo Profissional</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="menu-item" href="#">Serviços</a>
+                            <ul class="menu-content">
+                                <li><a class="menu-item" href="listar-servico.html">Listar Serviços</a></li>
+                                <li><a class="menu-item" href="add-servico.html">Novo Serviço</a></li>
+                            </ul>
+                        </li>
                         <li><a class="menu-item" href="#">Site de Reserva</a></li>
                     </ul>
                 </li>
