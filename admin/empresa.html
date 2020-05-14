@@ -103,10 +103,10 @@
                             <div class="btn-group">
                                 <button type="button" class="btn btn-primary white mr-1 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-plus-circle"></i>Adicionar</button>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item font-small-3" href="#">Reserva</a>
-                                    <a class="dropdown-item font-small-3" href="#">Cliente</a>
+                                    <a class="dropdown-item font-small-3" href="add-reserva.html">Reserva</a>
+                                    <a class="dropdown-item font-small-3" href="add-cliente.html">Cliente</a>
                                     <a class="dropdown-item font-small-3" href="add-profissional.html">Profissional</a>
-                                    <a class="dropdown-item font-small-3" href="#">Serviço</a>
+                                    <a class="dropdown-item font-small-3" href="add-servico.html">Serviço</a>
                                 </div>
                             </div>
                         </li>
@@ -133,9 +133,19 @@
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
                 <li class="nav-item"><a href="index.html"><i class="fa fa-tachometer"></i><span class="menu-title">Painel Inicial</span></a></li>
-                <li class="nav-item"><a href="#"><i class="fa fa-calendar"></i><span class="menu-title">Agenda</span></a></li>
-                <li class="nav-item"><a href="#"><i class="fa fa-list-alt"></i><span class="menu-title">Reservas</span></a></li>
-                <li class="nav-item"><a href="#"><i class="fa fa-address-book-o"></i><span class="menu-title">Clientes</span></a></li>
+                <li class="nav-item"><a href="calendario.html"><i class="fa fa-calendar"></i><span class="menu-title">Agenda</span></a></li>
+                <li class="nav-item"><a href="#"><i class="fa fa-list-alt"></i><span class="menu-title">Reservas</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="listar-reserva.html">Listar Reservas</a></li>
+                        <li><a class="menu-item" href="add-reserva.html">Nova Reserva</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#"><i class="fa fa-address-book-o"></i><span class="menu-title">Clientes</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="listar-cliente.html">Listar Clientes</a></li>
+                        <li><a class="menu-item" href="add-cliente.html">Novo Cliente</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a href="#"><i class="fa fa-pencil-square-o"></i><span class="menu-title">Gerenciar</span></a>                    
                     <ul class="menu-content">
                         <li class="active"><a class="menu-item" href="empresa.html">Empresa</a></li>
@@ -175,8 +185,8 @@
                     <div class="col-md-7 p-1">
                         <div class="card border-top-3 border-top-primary mb-0">
                             <div class="card-content">
-                                <div class="card-body">
-                                    <label class="h5 font-weight-bolder mb-2">Informações da Empresa</label>
+                                <div class="card-body p-1">
+                                    <label class="h5 font-weight-bolder mb-2">Informações da empresa</label>
                                     <form accept="#">
                                         <div class="form-body">
                                             <div class="row">
@@ -304,8 +314,8 @@
                     <div class="col-md-5 p-1">
                         <div class="card border-top-3 border-top-primary mb-0">
                             <div class="card-content">
-                                <div class="card-body">
-                                    <label class="h5 font-weight-bolder mb-2">Horário de Funcionamento</label>
+                                <div class="card-body p-1">
+                                    <label class="h5 font-weight-bolder mb-2">Horário de funcionamento</label>
                                     <form accept="#">
                                         <div class="form-body table-responsive">
                                             <table class="table table-hover ps-container ps-theme-default table-horario-empresa">

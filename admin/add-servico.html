@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>Cadastrar Profissional - App Tareservado</title>
+    <title>Cadastrar Serviço - App Tareservado</title>
     <link rel="apple-touch-icon" href="../app-assets/images/logo/icone.png">
     <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/logo/icone.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
@@ -127,7 +127,6 @@
     </nav>
     <!-- END: Header-->
 
-
     <!-- BEGIN: Main Menu-->
     <div class="main-menu menu-fixed menu-light menu-accordion shadow pt-1" data-scroll-to-active="true">
         <div class="main-menu-content">
@@ -150,15 +149,15 @@
                     <ul class="menu-content">
                         <li><a class="menu-item" href="empresa.html">Empresa</a></li>
                         <li><a class="menu-item" href="#">Equipe</a>
-                            <ul class="menu-content open">
+                            <ul class="menu-content">
                                 <li><a class="menu-item" href="listar-profissional.html">Listar Profissionais</a></li>
-                                <li class="active"><a class="menu-item" href="add-profissional.html">Novo Profissional</a></li>
+                                <li><a class="menu-item" href="add-profissional.html">Novo Profissional</a></li>
                             </ul>
                         </li>
                         <li><a class="menu-item" href="#">Serviços</a>
-                            <ul class="menu-content">
+                            <ul class="menu-content open">
                                 <li><a class="menu-item" href="listar-servico.html">Listar Serviços</a></li>
-                                <li><a class="menu-item" href="add-servico.html">Novo Serviço</a></li>
+                                <li class="active"><a class="menu-item" href="add-servico.html">Novo Serviço</a></li>
                             </ul>
                         </li>
                         <li><a class="menu-item" href="#">Site de Reserva</a></li>
@@ -178,162 +177,118 @@
         <div class="content-overlay"></div>
         <div class="content-wrapper">
             <div class="content-header row">
-                <h1 class="h4 font-weight-bolder pl-1">Cadastrar Profissional</h1>
+                <h1 class="h4 font-weight-bolder pl-1">Cadastrar Serviço</h1>
             </div>
             <div class="content-body">
                 <div class="row">
-                    <div class="col-md-7 p-1">
+                    <div class="col-md-12 p-1">
                         <div class="card border-top-3 border-top-primary mb-0">
                             <div class="card-content">
                                 <div class="card-body p-1">
-                                    <label class="h5 font-weight-bolder mb-2">Informações do profissional</label>
+                                    <label class="h5 font-weight-bolder mb-2">Informações do serviço</label>
                                     <form accept="#">
                                         <div class="form-body">
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <div class="form-group">
-                                                        <label for="basicInput">Nome completo</label>
-                                                        <input type="text" class="form-control" placeholder="Sena Madureira">
+                                                        <label for="basicInput">Nome do serviço</label>
+                                                        <input type="text" class="form-control" placeholder="Corte Masculino">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
-                                                        <label for="basicInput">E-mail</label>
-                                                        <input type="email" class="form-control" placeholder="contato@email.com.br">
+                                                        <label for="basicInput">Tempo de duração</label>
+                                                        <div class="row align-items-center">
+                                                            <div class="col-5 pr-0">
+                                                                <select class="form-control">
+                                                                    <option value="">horas</option>
+                                                                    <option value="">00</option>
+                                                                    <option value="">01</option>
+                                                                    <option value="">02</option>
+                                                                    <option value="">03</option>
+                                                                    <option value="">04</option>
+                                                                    <option value="">05</option>
+                                                                    <option value="">06</option>
+                                                                    <option value="">07</option>
+                                                                    <option value="">08</option>
+                                                                    <option value="">09</option>
+                                                                    <option value="">10</option>
+                                                                    <option value="">11</option>
+                                                                    <option value="">12</option>
+                                                                    <option value="">13</option>
+                                                                    <option value="">14</option>
+                                                                    <option value="">15</option>
+                                                                    <option value="">16</option>
+                                                                    <option value="">17</option>
+                                                                    <option value="">18</option>
+                                                                    <option value="">19</option>
+                                                                    <option value="">20</option>
+                                                                    <option value="">21</option>
+                                                                    <option value="">22</option>
+                                                                    <option value="">23</option>
+                                                                    <option value="">24</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-1 p-0 text-center">:</div>
+                                                            <div class="col-5 pl-0">
+                                                                <select class="form-control">
+                                                                    <option value="">minutos</option>
+                                                                    <option value="">00</option>
+                                                                    <option value="">15</option>
+                                                                    <option value="">30</option>
+                                                                    <option value="">45</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <label for="basicInput">Telefone</label>
-                                                        <input type="phone" class="form-control" placeholder="(99) 9999-9999">
-                                                    </div>
+                                                    <label for="basicInput">Categoria do serviço</label>
+                                                    <select class="form-control">
+                                                        <option value="">Categoria 01</option>
+                                                        <option value="">Categoria 02</option>
+                                                        <option value="">Categoria 03</option>
+                                                        <option value="">Categoria 04</option>
+                                                        <option value="">Categoria 05</option>
+                                                    </select>
                                                 </div>
+                                                
                                             </div>  
-                                            
+                                            </div>
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label for="basicInput">Quais serviços ele presta?</label>
+                                                        <label for="basicInput">Quais profissionais realizam este serviço?</label>
                                                         <select class="select2 form-control" multiple="multiple" id="id_h5_multi">
-                                                            <optgroup label="Beleza e Estética">
-                                                                <option value="">Salão de Beleza</option>
-                                                                <option value="">Manicure e Pedicure</option>
-                                                                <option value="">Salão de Sobrancelhas</option>
-                                                            </optgroup>
-                                                            <optgroup label="Saúde">
-                                                                <option value="">Clínico Geral</option>
-                                                                <option value="">Clínica Ortopédica</option>
-                                                                <option value="">Destista</option>
-                                                            </optgroup>
-                                                            <optgroup label="Autos">
-                                                                <option value="">Mecânica Geral</option>
-                                                                <option value="">Pneus e Borracharia</option>
-                                                                <option value="">Alinhamento e Balanceamento</option>
-                                                            </optgroup>
-                                                            <optgroup label="Aulas">
-                                                                <option value="">Aulas de Idiomas</option>
-                                                                <option value="">Aulas de Yoga</option>
-                                                                <option value="">Personal Trainer</option>
-                                                            </optgroup>
+                                                            <option value="">Nome do Profissional 01</option>
+                                                            <option value="">Nome do Profissional 02</option>
+                                                            <option value="">Nome do Profissional 03</option>
+                                                            <option value="">Nome do Profissional 04</option>
+                                                            <option value="">Nome do Profissional 05</option>
                                                         </select>
                                                     </div>
                                                 </div>                                                
                                             </div>
-                                            
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <fieldset class="form-group">
+                                                        <label for="placeTextarea">Descreva o serviço</label>
+                                                        <textarea class="form-control" id="placeTextarea" rows="3" placeholder="Esta informação aparecerá para seus clientes."></textarea>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5 p-1">
-                        <div class="card border-top-3 border-top-primary mb-0">
-                            <div class="card-content">
-                                <div class="card-body p-1">
-                                    <label class="h5 font-weight-bolder mb-2">Horário de trabalho</label>
-                                    <form accept="#">
-                                        <div class="form-body table-responsive">
-                                            <table class="table table-hover ps-container ps-theme-default table-horario-empresa">
-                                                <thead>
-                                                    <tr>
-                                                        <th></th>
-                                                        <th></th>
-                                                        <th><small>inicia</small></th>
-                                                        <th><small>almoça</small></th>
-                                                        <th><small>retorna</small></th>
-                                                        <th><small>encerra</small></th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td><input type="checkbox" id="switcherySize1" class="switchery" data-size="xs" /></td>
-                                                        <td><small class="">domingo</small></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="08:00"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="20:00"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" id="switcherySize1" class="switchery" data-size="xs" checked/></td>
-                                                        <td><small class="">segunda</small></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="08:00"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="20:00"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" id="switcherySize1" class="switchery" data-size="xs" checked/></td>
-                                                        <td><small class="">terça</small></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="08:00"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="20:00"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" id="switcherySize1" class="switchery" data-size="xs" checked/></td>
-                                                        <td><small class="">quarta</small></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="08:00"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="20:00"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" id="switcherySize1" class="switchery" data-size="xs" checked/></td>
-                                                        <td><small class="">quinta</small></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="08:00"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="20:00"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" id="switcherySize1" class="switchery" data-size="xs" checked/></td>
-                                                        <td><small class="">sexta</small></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="08:00"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="20:00"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" id="switcherySize1" class="switchery" data-size="xs" checked/></td>
-                                                        <td><small class="">sábado</small></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="08:00"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="20:00"></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
 
                 <div class="row mt-2">
                     <div class="col-12">
-                        <button type="button" class="btn btn-success shadow">Cadastrar profissional</button>
+                        <button type="button" class="btn btn-success shadow">Cadastrar serviço</button>
                     </div>
                 </div>
                 

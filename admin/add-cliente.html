@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>Cadastrar Profissional - App Tareservado</title>
+    <title>Cadastrar Cliente - App Tareservado</title>
     <link rel="apple-touch-icon" href="../app-assets/images/logo/icone.png">
     <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/logo/icone.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
@@ -141,18 +141,18 @@
                     </ul>
                 </li>
                 <li class="nav-item"><a href="#"><i class="fa fa-address-book-o"></i><span class="menu-title">Clientes</span></a>
-                    <ul class="menu-content">
+                    <ul class="menu-content open">
                         <li><a class="menu-item" href="listar-cliente.html">Listar Clientes</a></li>
-                        <li><a class="menu-item" href="add-cliente.html">Novo Cliente</a></li>
+                        <li class="active"><a class="menu-item" href="add-cliente.html">Novo Cliente</a></li>
                     </ul>
                 </li>
                 <li class="nav-item"><a href="#"><i class="fa fa-pencil-square-o"></i><span class="menu-title">Gerenciar</span></a>                    
                     <ul class="menu-content">
                         <li><a class="menu-item" href="empresa.html">Empresa</a></li>
                         <li><a class="menu-item" href="#">Equipe</a>
-                            <ul class="menu-content open">
+                            <ul class="menu-content">
                                 <li><a class="menu-item" href="listar-profissional.html">Listar Profissionais</a></li>
-                                <li class="active"><a class="menu-item" href="add-profissional.html">Novo Profissional</a></li>
+                                <li><a class="menu-item" href="add-profissional.html">Novo Profissional</a></li>
                             </ul>
                         </li>
                         <li><a class="menu-item" href="#">Serviços</a>
@@ -178,22 +178,22 @@
         <div class="content-overlay"></div>
         <div class="content-wrapper">
             <div class="content-header row">
-                <h1 class="h4 font-weight-bolder pl-1">Cadastrar Profissional</h1>
+                <h1 class="h4 font-weight-bolder pl-1">Cadastrar Cliente</h1>
             </div>
             <div class="content-body">
                 <div class="row">
-                    <div class="col-md-7 p-1">
+                    <div class="col-md-12 p-1">
                         <div class="card border-top-3 border-top-primary mb-0">
                             <div class="card-content">
                                 <div class="card-body p-1">
-                                    <label class="h5 font-weight-bolder mb-2">Informações do profissional</label>
+                                    <label class="h5 font-weight-bolder mb-2">Informações do cliente</label>
                                     <form accept="#">
                                         <div class="form-body">
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="basicInput">Nome completo</label>
-                                                        <input type="text" class="form-control" placeholder="Sena Madureira">
+                                                        <input type="text" class="form-control" placeholder="Empresa Modelo">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
@@ -209,35 +209,51 @@
                                                     </div>
                                                 </div>
                                             </div>  
-                                            
                                             <div class="row">
-                                                <div class="col-md-12">
+                                                <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="basicInput">Quais serviços ele presta?</label>
-                                                        <select class="select2 form-control" multiple="multiple" id="id_h5_multi">
-                                                            <optgroup label="Beleza e Estética">
-                                                                <option value="">Salão de Beleza</option>
-                                                                <option value="">Manicure e Pedicure</option>
-                                                                <option value="">Salão de Sobrancelhas</option>
-                                                            </optgroup>
-                                                            <optgroup label="Saúde">
-                                                                <option value="">Clínico Geral</option>
-                                                                <option value="">Clínica Ortopédica</option>
-                                                                <option value="">Destista</option>
-                                                            </optgroup>
-                                                            <optgroup label="Autos">
-                                                                <option value="">Mecânica Geral</option>
-                                                                <option value="">Pneus e Borracharia</option>
-                                                                <option value="">Alinhamento e Balanceamento</option>
-                                                            </optgroup>
-                                                            <optgroup label="Aulas">
-                                                                <option value="">Aulas de Idiomas</option>
-                                                                <option value="">Aulas de Yoga</option>
-                                                                <option value="">Personal Trainer</option>
-                                                            </optgroup>
-                                                        </select>
+                                                        <label for="basicInput">Endereço</label>
+                                                        <input type="text" class="form-control" placeholder="Rua Padre José Natuzzi">
                                                     </div>
-                                                </div>                                                
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="basicInput">Número</label>
+                                                        <input type="text" class="form-control" placeholder="342">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="basicInput">Complemento</label>
+                                                        <input type="text" class="form-control" placeholder="Casa 2">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="basicInput">Bairro</label>
+                                                        <input type="text" class="form-control" placeholder="Vila Pereira Cerca">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="basicInput">Cidade</label>
+                                                        <input type="text" class="form-control" placeholder="São Paulo">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="basicInput">Estado</label>
+                                                        <input type="text" class="form-control" placeholder="SP">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="basicInput">CEP</label>
+                                                        <input type="text" class="form-control" placeholder="02931-090">
+                                                    </div>
+                                                </div>
                                             </div>
                                             
                                         </div>
@@ -246,94 +262,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5 p-1">
-                        <div class="card border-top-3 border-top-primary mb-0">
-                            <div class="card-content">
-                                <div class="card-body p-1">
-                                    <label class="h5 font-weight-bolder mb-2">Horário de trabalho</label>
-                                    <form accept="#">
-                                        <div class="form-body table-responsive">
-                                            <table class="table table-hover ps-container ps-theme-default table-horario-empresa">
-                                                <thead>
-                                                    <tr>
-                                                        <th></th>
-                                                        <th></th>
-                                                        <th><small>inicia</small></th>
-                                                        <th><small>almoça</small></th>
-                                                        <th><small>retorna</small></th>
-                                                        <th><small>encerra</small></th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td><input type="checkbox" id="switcherySize1" class="switchery" data-size="xs" /></td>
-                                                        <td><small class="">domingo</small></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="08:00"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="20:00"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" id="switcherySize1" class="switchery" data-size="xs" checked/></td>
-                                                        <td><small class="">segunda</small></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="08:00"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="20:00"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" id="switcherySize1" class="switchery" data-size="xs" checked/></td>
-                                                        <td><small class="">terça</small></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="08:00"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="20:00"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" id="switcherySize1" class="switchery" data-size="xs" checked/></td>
-                                                        <td><small class="">quarta</small></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="08:00"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="20:00"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" id="switcherySize1" class="switchery" data-size="xs" checked/></td>
-                                                        <td><small class="">quinta</small></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="08:00"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="20:00"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" id="switcherySize1" class="switchery" data-size="xs" checked/></td>
-                                                        <td><small class="">sexta</small></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="08:00"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="20:00"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" id="switcherySize1" class="switchery" data-size="xs" checked/></td>
-                                                        <td><small class="">sábado</small></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="08:00"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="-"></td>
-                                                        <td><input type="text" class="form-control form-control-sm" placeholder="20:00"></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
 
                 <div class="row mt-2">
                     <div class="col-12">
-                        <button type="button" class="btn btn-success shadow">Cadastrar profissional</button>
+                        <button type="button" class="btn btn-success shadow">Cadastrar cliente</button>
                     </div>
                 </div>
                 
