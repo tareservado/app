@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/forms/toggle/switchery.min.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/forms/selects/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/extensions/sweetalert2.min.css">     
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -103,10 +105,11 @@
                             <div class="btn-group">
                                 <button type="button" class="btn btn-primary white mr-1 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-plus-circle"></i>Adicionar</button>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item font-small-3" href="add-reserva.html">Reserva</a>
-                                    <a class="dropdown-item font-small-3" href="add-cliente.html">Cliente</a>
-                                    <a class="dropdown-item font-small-3" href="add-profissional.html">Profissional</a>
-                                    <a class="dropdown-item font-small-3" href="add-servico.html">Serviço</a>
+                                    <a class="dropdown-item font-small-3 pt-1 pb-1" href="add-reserva.html">Reserva</a>
+                                    <a class="dropdown-item font-small-3 pt-1 pb-1" href="add-cliente.html">Cliente</a>
+                                    <a class="dropdown-item font-small-3 pt-1 pb-1" href="add-profissional.html">Profissional</a>
+                                    <a class="dropdown-item font-small-3 pt-1 pb-1" href="add-servico.html">Serviço</a>
+                                    <a class="dropdown-item font-small-3 pt-1 pb-1" href="add-servico.html">Loja</a>
                                 </div>
                             </div>
                         </li>
@@ -147,7 +150,13 @@
                 </li>
                 <li class="nav-item"><a href="#"><i class="fa fa-pencil-square-o"></i><span class="menu-title">Gerenciar</span></a>                    
                     <ul class="menu-content">
-                        <li><a class="menu-item" href="empresa.html">Empresa</a></li>
+                        <li><a class="menu-item" href="#">Empresa</a>
+                            <ul class="menu-content">
+                                <li><a class="menu-item" href="empresa.html">Principal</a></li>
+                                <li><a class="menu-item" href="listar-loja.html">Listar Lojas</a></li>
+                                <li><a class="menu-item" href="add-loja.html">Nova Loja</a></li>
+                            </ul>
+                        </li>
                         <li><a class="menu-item" href="#">Equipe</a>
                             <ul class="menu-content">
                                 <li><a class="menu-item" href="listar-profissional.html">Listar Profissionais</a></li>
@@ -256,7 +265,7 @@
                                             </div>  
                                             </div>
                                             <div class="row">
-                                                <div class="col-md-12">
+                                                <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="basicInput">Quais profissionais realizam este serviço?</label>
                                                         <select class="select2 form-control" multiple="multiple" id="id_h5_multi">
@@ -267,6 +276,15 @@
                                                             <option value="">Nome do Profissional 05</option>
                                                         </select>
                                                     </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <fieldset class="form-group">
+                                                        <label for="basicInputFile">Enviar imagem do serviço</label>
+                                                        <div class="custom-file">
+                                                            <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                                            <label class="custom-file-label" for="inputGroupFile01"></label>
+                                                        </div>
+                                                    </fieldset>
                                                 </div>                                                
                                             </div>
                                             <div class="row">
@@ -288,7 +306,7 @@
 
                 <div class="row mt-2">
                     <div class="col-12">
-                        <button type="button" class="btn btn-success shadow">Cadastrar serviço</button>
+                        <button type="button" class="btn btn-success shadow cadastro-servico">Cadastrar serviço</button>
                     </div>
                 </div>
                 
@@ -316,6 +334,8 @@
     <script src="../app-assets/vendors/js/forms/toggle/bootstrap-checkbox.min.js"></script>
     <script src="../app-assets/vendors/js/forms/toggle/switchery.min.js"></script>  
     <script src="../app-assets/vendors/js/forms/select/select2.full.min.js"></script>  
+    <script src="../app-assets/vendors/js/extensions/sweetalert2.all.min.js"></script>
+    <script src="../app-assets/vendors/js/extensions/polyfill.min.js"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
@@ -326,6 +346,7 @@
     <!-- BEGIN: Page JS-->
     <script src="../app-assets/js/scripts/forms/switch.js"></script>
     <script src="../app-assets/js/scripts/forms/select/form-select2.js"></script>
+    <script src="../app-assets/js/scripts/extensions/sweet-alerts.js"></script>
     <!-- END: Page JS-->
 
 </body>

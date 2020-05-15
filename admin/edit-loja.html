@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>Cadastrar Profissional - App Tareservado</title>
+    <title>Editar Loja - App Tareservado</title>
     <link rel="apple-touch-icon" href="../app-assets/images/logo/icone.png">
     <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/logo/icone.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/forms/toggle/switchery.min.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/forms/selects/select2.min.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/animate/animate.css">
-    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/extensions/sweetalert2.min.css"> 
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/extensions/sweetalert2.min.css">     
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -152,16 +152,16 @@
                 <li class="nav-item"><a href="#"><i class="fa fa-pencil-square-o"></i><span class="menu-title">Gerenciar</span></a>                    
                     <ul class="menu-content">
                         <li><a class="menu-item" href="#">Empresa</a>
-                            <ul class="menu-content">
+                            <ul class="menu-content open">
                                 <li><a class="menu-item" href="empresa.html">Principal</a></li>
-                                <li><a class="menu-item" href="listar-loja.html">Listar Lojas</a></li>
+                                <li class="active"><a class="menu-item" href="listar-loja.html">Listar Lojas</a></li>
                                 <li><a class="menu-item" href="add-loja.html">Nova Loja</a></li>
                             </ul>
                         </li>
                         <li><a class="menu-item" href="#">Equipe</a>
-                            <ul class="menu-content open">
+                            <ul class="menu-content">
                                 <li><a class="menu-item" href="listar-profissional.html">Listar Profissionais</a></li>
-                                <li class="active"><a class="menu-item" href="add-profissional.html">Novo Profissional</a></li>
+                                <li><a class="menu-item" href="add-profissional.html">Novo Profissional</a></li>
                             </ul>
                         </li>
                         <li><a class="menu-item" href="#">Serviços</a>
@@ -187,7 +187,7 @@
         <div class="content-overlay"></div>
         <div class="content-wrapper">
             <div class="content-header row">
-                <h1 class="h4 font-weight-bolder pl-1">Cadastrar Profissional</h1>
+                <h1 class="h4 font-weight-bolder pl-1">Gerenciar Empresa</h1>
             </div>
             <div class="content-body">
                 <div class="row">
@@ -195,39 +195,84 @@
                         <div class="card border-top-3 border-top-primary mb-0">
                             <div class="card-content">
                                 <div class="card-body p-1">
-                                    <label class="h5 font-weight-bolder mb-2">Informações do profissional</label>
+                                    <label class="h5 font-weight-bolder mb-2">Atualizar informações da loja</label>
                                     <form accept="#">
                                         <div class="form-body">
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <div class="form-group">
-                                                        <label for="basicInput">Nome completo</label>
-                                                        <input type="text" class="form-control" placeholder="Sena Madureira">
+                                                        <label for="basicInput">Nome da loja</label>
+                                                        <input type="text" class="form-control" value="Nome da Loja">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="basicInput">E-mail</label>
-                                                        <input type="email" class="form-control" placeholder="contato@email.com.br">
+                                                        <input type="email" class="form-control" value="contato@email.com.br">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="basicInput">Telefone</label>
-                                                        <input type="phone" class="form-control" placeholder="(99) 9999-9999">
+                                                        <input type="phone" class="form-control" value="(99) 9999-9999">
                                                     </div>
                                                 </div>
                                             </div>  
-                                            
                                             <div class="row">
-                                                <div class="col-md-12">
+                                                <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="basicInput">Quais serviços ele presta?</label>
+                                                        <label for="basicInput">Endereço</label>
+                                                        <input type="text" class="form-control" value="Rua Padre José Natuzzi">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="basicInput">Número</label>
+                                                        <input type="text" class="form-control" value="342">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="basicInput">Complemento</label>
+                                                        <input type="text" class="form-control" value="Casa 2">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="basicInput">Bairro</label>
+                                                        <input type="text" class="form-control" value="Vila Pereira Cerca">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="basicInput">Cidade</label>
+                                                        <input type="text" class="form-control" value="São Paulo">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="basicInput">Estado</label>
+                                                        <input type="text" class="form-control" value="SP">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="basicInput">CEP</label>
+                                                        <input type="text" class="form-control" value="02931-090">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <div class="form-group">
+                                                        <label for="basicInput">Quais serviços esta loja oferece?</label>
                                                         <select class="select2 form-control" multiple="multiple" id="id_h5_multi">
                                                             <optgroup label="Beleza e Estética">
                                                                 <option value="">Salão de Beleza</option>
                                                                 <option value="">Manicure e Pedicure</option>
-                                                                <option value="">Salão de Sobrancelhas</option>
+                                                                <option value="" selected>Salão de Sobrancelhas</option>
                                                             </optgroup>
                                                             <optgroup label="Saúde">
                                                                 <option value="">Clínico Geral</option>
@@ -246,9 +291,29 @@
                                                             </optgroup>
                                                         </select>
                                                     </div>
-                                                </div>                                                
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <div class="form-group">
+                                                        <label for="basicInput">Quantos funcionários tem?</label>
+                                                        <select class="form-control">
+                                                            <option value=""></option>
+                                                            <option value="" selected>1 a 5 pessoas</option>
+                                                            <option value="">6 a 15 pessoas</option>
+                                                            <option value="">mais de 15 pessoas</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <fieldset>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" name="customCheck" id="customCheck1">
+                                                            <label class="custom-control-label" for="customCheck1">Não divulgar meu endereço no site e notificações de email.</label>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>   
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
@@ -259,7 +324,7 @@
                         <div class="card border-top-3 border-top-primary mb-0">
                             <div class="card-content">
                                 <div class="card-body p-1">
-                                    <label class="h5 font-weight-bolder mb-2">Horário de trabalho</label>
+                                    <label class="h5 font-weight-bolder mb-2">Horário de funcionamento</label>
                                     <form accept="#">
                                         <div class="form-body table-responsive">
                                             <table class="table table-striped ps-container ps-theme-default table-horario-empresa">
@@ -267,10 +332,10 @@
                                                     <tr>
                                                         <th></th>
                                                         <th></th>
-                                                        <th><small>inicia</small></th>
-                                                        <th><small>almoça</small></th>
-                                                        <th><small>retorna</small></th>
-                                                        <th><small>encerra</small></th>
+                                                        <th><small>abre</small></th>
+                                                        <th><small>almoço</small></th>
+                                                        <th><small>retorno</small></th>
+                                                        <th><small>fecha</small></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -342,7 +407,7 @@
 
                 <div class="row mt-2">
                     <div class="col-12">
-                        <button type="button" class="btn btn-success shadow cadastro-profissional">Cadastrar profissional</button>
+                        <button type="button" class="btn btn-success shadow atualizar-loja">Atualizar loja</button>
                     </div>
                 </div>
                 

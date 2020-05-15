@@ -157,6 +157,79 @@ $(document).ready(function() {
 
   // type
 
+
+  $(".cadastro-cliente").on("click", function() {
+    Swal.fire({
+      title: "Cliente Cadastrado 👍",
+      text: "Parabéns pelo novo cliente.",
+      type: "success",
+      confirmButtonClass: "btn btn-success",
+      buttonsStyling: false
+    });
+  });
+
+  $(".cadastro-loja").on("click", function() {
+    Swal.fire({
+      title: "Loja Cadastrada 👍",
+      text: "",
+      type: "success",
+      confirmButtonClass: "btn btn-success",
+      buttonsStyling: false
+    });
+  });
+
+  $(".atualizar-loja").on("click", function() {
+    Swal.fire({
+      title: "Loja Atualizada 👍",
+      text: "",
+      type: "success",
+      confirmButtonClass: "btn btn-success",
+      buttonsStyling: false
+    });
+  });
+
+  $(".cadastro-servico").on("click", function() {
+    Swal.fire({
+      title: "Serviço Cadastrado 👍",
+      text: "",
+      type: "success",
+      confirmButtonClass: "btn btn-success",
+      buttonsStyling: false
+    });
+  });
+
+  $(".cadastro-profissional").on("click", function() {
+    Swal.fire({
+      title: "Profissional Cadastrado 👍",
+      text: "",
+      type: "success",
+      confirmButtonClass: "btn btn-success",
+      buttonsStyling: false
+    });
+  });
+
+
+  $(".reserva-ok").on("click", function() {
+    Swal.fire({
+      title: "Reserva Confirmada 👍",
+      text: "Seu cliente já foi avisado.",
+      type: "success",
+      confirmButtonClass: "btn btn-success",
+      buttonsStyling: false
+    });
+  });
+
+  $(".reserva-cancelada").on("click", function() {
+    Swal.fire({
+      title: "Reserva Cancelada 👎",
+      text: "Seu cliente já foi avisado.",
+      type: "error",
+      confirmButtonClass: "btn btn-danger",
+      buttonsStyling: false
+    });
+  });
+
+
   $("#type-success").on("click", function() {
     Swal.fire({
       title: "Good job!",

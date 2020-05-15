@@ -6,16 +6,19 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>Painel Inicial - App Tareservado</title>
+    <title>Listagem de Lojas - App Tareservado</title>
     <link rel="apple-touch-icon" href="../app-assets/images/logo/icone.png">
     <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/logo/icone.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/charts/apexcharts.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/forms/toggle/switchery.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/forms/selects/select2.min.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/animate/animate.css">
-    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/extensions/sweetalert2.min.css">    
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/extensions/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/datatables.min.css">
+ 
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -28,7 +31,7 @@
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/fonts/simple-line-icons/style.min.css">
-    <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/card-statistics.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/plugins/forms/switch.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -151,9 +154,9 @@
                 <li class="nav-item"><a href="#"><i class="fa fa-pencil-square-o"></i><span class="menu-title">Gerenciar</span></a>                    
                     <ul class="menu-content">
                         <li><a class="menu-item" href="#">Empresa</a>
-                            <ul class="menu-content">
+                            <ul class="menu-content open">
                                 <li><a class="menu-item" href="empresa.html">Principal</a></li>
-                                <li><a class="menu-item" href="listar-loja.html">Listar Lojas</a></li>
+                                <li class="active"><a class="menu-item" href="listar-loja.html">Listar Lojas</a></li>
                                 <li><a class="menu-item" href="add-loja.html">Nova Loja</a></li>
                             </ul>
                         </li>
@@ -170,7 +173,6 @@
                             </ul>
                         </li>
                         <li><a class="menu-item" href="#">Site de Reserva</a></li>
-                        <li><a class="menu-item" href="#">Comunicações</a></li>
                     </ul>
                 </li>
                 <li class="nav-item"><a href="#"><i class="fa fa-pie-chart"></i><span class="menu-title">Relatórios</span></a></li>
@@ -187,112 +189,14 @@
         <div class="content-overlay"></div>
         <div class="content-wrapper">
             <div class="content-header row">
-                <h1 class="h5 font-weight-bolder pb-0 pl-1 text-sm-center">Segunda-feira, 11 de maio de 2020</h1>                
+                <h1 class="h4 font-weight-bolder pl-1">Gerenciar Empresa</h1>
             </div>
             <div class="content-body">
-                <div class="row match-height mb-1">
-                    <div class="col-xl-3 col-sm-6 col-12 p-1">
-                        <div class="card mb-0">
-                            <div class="card-content">
-                                <div class="card-body">
-                                    <div class="media d-flex">
-                                        <div class="media-body text-left">
-                                            <h3 class="danger">6 reservas</h3>
-                                            <span>Para aprovar</span><br>
-                                            <button type="button" class="btn btn-outline-danger btn-sm mt-1">ver reservas</button>
-                                        </div>
-                                        <div class="align-self-top">
-                                            <i class="fa fa-calendar-plus-o danger font-large-2 float-right"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 col-12 p-1">
-                        <div class="card mb-0">
-                            <div class="card-content">
-                                <div class="card-body">
-                                    <div class="media d-flex">
-                                        <div class="media-body text-left">
-                                            <h3 class="success">11 reservas</h3>
-                                            <span>Confirmadas hoje</span><br>
-                                            <button type="button" class="btn btn-outline-success btn-sm mt-1">ver reservas</button>
-                                        </div>
-                                        <div class="align-self-top">
-                                            <i class="fa fa-calendar-check-o success font-large-2 float-right"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 col-12 p-1">
-                        <div class="card mb-0">
-                            <div class="card-content">
-                                <div class="card-body">
-                                    <div class="media d-flex">
-                                        <div class="media-body text-left">
-                                            <h3 class="teal">47 reservas</h3>
-                                            <span>Últimos 7 dias</span><br>
-                                            <button type="button" class="btn btn-outline-teal btn-sm mt-1">ver reservas</button>
-                                        </div>
-                                        <div class="align-self-top">
-                                            <i class="fa fa-calendar teal font-large-2 float-right"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 col-12 p-1">
-                        <div class="card mb-0">
-                            <div class="card-content">
-                                <div class="card-body">
-                                    <div class="media d-flex">
-                                        <div class="media-body text-left">
-                                            <h3 class="blue">29 clientes</h3>
-                                            <span>Últimos 7 dias</span><br>
-                                            <button type="button" class="btn btn-outline-blue btn-sm mt-1">ver clientes</button>
-                                        </div>
-                                        <div class="align-self-top">
-                                            <i class="fa fa-address-book-o blue font-large-2 float-right"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row match-height">
-                    <div class="col-xl-6 col-lg-12">
-                        <!-- Line Basic Chart Start -->
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="card-title">Reservas nos Últimos 7 dias</div>
-                                <div id="line-basic-chart"></div>
-                            </div>
-                        </div>
-                        <!-- line basic chart end -->
-                    </div>
-                    <div class="col-xl-6 col-lg-12">
-                        <!-- Heatmap Basic Chart Start -->
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="card-title">Reservas por horário do dia</div>
-                                <div id="heatmap-basic-chart"></div>
-                            </div>
-                        </div>
-                        <!-- Heatmap Basic Chart end -->
-                    </div>
-                </div>
-
-                <div class="row match-height">
-                    <div class="col-12">
-                        <div class="card">
+                <div class="row">
+                    <div class="col-12 p-1">
+                        <div class="card border-top-3 border-top-primary mb-0">
                             <div class="card-header">
-                                <h4 class="card-title">Reservas Recentes</h4>
+                                <label class="h5 font-weight-bolder">Listagem de lojas</label>
                                 <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
                                 <div class="heading-elements">
                                     <ul class="list-inline mb-0">
@@ -302,110 +206,58 @@
                                 </div>
                             </div>
                             <div class="card-content">
-                                <div class="table-responsive">
-                                    <table class="table table-striped mb-0 ps-container ps-theme-default">
-                                        <thead class="">
+                                <div class="card-body pt-0">
+                                    <table class="table table-striped table-bordered zero-configuration">
+                                        <thead>
                                             <tr>
-                                                <th class="pl-2">Codigo</th>
-                                                <th>Cliente</th>
-                                                <th>Profissional</th>
-                                                <th>Serviço</th>
-                                                <th>Reserva</th>
-                                                <th>Data</th>
-                                                <th>Hora</th>
-                                                <th></th>
+                                                <th>Nome da loja</th>
+                                                <th>Tipo</th>
+                                                <th>E-mail</th>
+                                                <th>Telefone</th>
+                                                <th>Endereço</th>
+                                                <th>Cidade</th>
+                                                <th>Estado</th>
+                                                <th>Editar</th>
                                             </tr>
                                         </thead>
-                                        <tbody class="">
+                                        <tbody>
                                             <tr>
-                                                <td class="text-truncate pl-2">TR-10521</td>
-                                                <td class="text-truncate">Elizabeth Farias</td>
-                                                <td class="text-truncate">Joana Prado</td>
-                                                <td class="text-truncate">Corte Feminino</td>
-                                                <td class="text-truncate"><span class="badge badge-warning">Pendente</span></td>
-                                                <td class="text-truncate">08/05</td>
-                                                <td class="text-truncate">11:00</td>
-                                                <td class="text-truncate">
-                                                    <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-icon btn-pure success reserva-ok" title="Confirmar"><i class="fa fa-check"></i></button>
-                                                        <button type="button" class="btn btn-icon btn-pure primary" title="Reagendar"><i class="fa fa-retweet"></i></button>
-                                                        <button type="button" class="btn btn-icon btn-pure danger reserva-cancelada" title="Cancelar"><i class="fa fa-times"></i></button>
-                                                     </div>
-                                                </td>
+                                                <td>Nome da loja 01</td>
+                                                <td>Principal</td>
+                                                <td><a href="mailto:contato@loja.com.br">contato@loja.com.br</a></td>
+                                                <td><a href="tel:01139990099">(11) 3999-0099</a></td>
+                                                <td>Rua Padre Jose Natuzzi, 342</td>
+                                                <td>São Paulo</td>
+                                                <td>SP</td>
+                                                <td><a href="edit-loja.html" class="btn btn-icon btn-pure primary" title="Editar loja"><i class="fa fa-pencil-square-o"></i></a></td>
                                             </tr>
                                             <tr>
-                                                <td class="text-truncate pl-2">TR-10456</td>
-                                                <td class="text-truncate">Thais Araujo</td>
-                                                <td class="text-truncate">Marisa Montes</td>
-                                                <td class="text-truncate">Corte Feminino</td>
-                                                <td class="text-truncate"><span class="badge badge-success">Confirmada</span></td>
-                                                <td class="text-truncate">08/05</td>
-                                                <td class="text-truncate">11:00</td>
-                                                <td class="text-truncate">
-                                                    <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-icon btn-pure success reserva-ok" title="Confirmar"><i class="fa fa-check"></i></button>
-                                                        <button type="button" class="btn btn-icon btn-pure primary" title="Reagendar"><i class="fa fa-retweet"></i></button>
-                                                        <button type="button" class="btn btn-icon btn-pure danger reserva-cancelada" title="Cancelar"><i class="fa fa-times"></i></button>
-                                                     </div>
-                                                </td>
+                                                <td>Nome da loja 02</td>
+                                                <td>Loja</td>
+                                                <td><a href="mailto:contato@loja.com.br">contato@loja.com.br</a></td>
+                                                <td><a href="tel:01139990099">(11) 3999-0099</a></td>
+                                                <td>Rua Padre Jose Natuzzi, 342</td>
+                                                <td>São Paulo</td>
+                                                <td>SP</td>
+                                                <td><a href="edit-loja.html" class="btn btn-icon btn-pure primary" title="Editar loja"><i class="fa fa-pencil-square-o"></i></a></td>
                                             </tr>
                                             <tr>
-                                                <td class="text-truncate pl-2">TR-10789</td>
-                                                <td class="text-truncate">Elias Maluco</td>
-                                                <td class="text-truncate">Sena</td>
-                                                <td class="text-truncate">Corte Masculino</td>
-                                                <td class="text-truncate"><span class="badge badge-success">Confirmada</span></td>
-                                                <td class="text-truncate">08/05</td>
-                                                <td class="text-truncate">11:00</td>
-                                                <td class="text-truncate">
-                                                    <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-icon btn-pure success reserva-ok" title="Confirmar"><i class="fa fa-check"></i></button>
-                                                        <button type="button" class="btn btn-icon btn-pure primary" title="Reagendar"><i class="fa fa-retweet"></i></button>
-                                                        <button type="button" class="btn btn-icon btn-pure danger reserva-cancelada" title="Cancelar"><i class="fa fa-times"></i></button>
-                                                     </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-truncate pl-2">TR-10987</td>
-                                                <td class="text-truncate">Cássia Kiss</td>
-                                                <td class="text-truncate">Marcia Miranda</td>
-                                                <td class="text-truncate">Corte Feminino</td>
-                                                <td class="text-truncate"><span class="badge badge-danger">Cancelada</span></td>
-                                                <td class="text-truncate">08/05</td>
-                                                <td class="text-truncate">11:00</td>
-                                                <td class="text-truncate">
-                                                    <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-icon btn-pure success reserva-ok" title="Confirmar"><i class="fa fa-check"></i></button>
-                                                        <button type="button" class="btn btn-icon btn-pure primary" title="Reagendar"><i class="fa fa-retweet"></i></button>
-                                                        <button type="button" class="btn btn-icon btn-pure danger reserva-cancelada" title="Cancelar"><i class="fa fa-times"></i></button>
-                                                     </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-truncate pl-2">TR-1043</td>
-                                                <td class="text-truncate">Paulinho da Viola</td>
-                                                <td class="text-truncate">Helio Fonseca</td>
-                                                <td class="text-truncate">Barba e Bigode</td>
-                                                <td class="text-truncate"><span class="badge badge-success">Confirmada</span></td>
-                                                <td class="text-truncate">08/05</td>
-                                                <td class="text-truncate">11:00</td>
-                                                <td class="text-truncate">
-                                                    <div class="btn-group" role="group">
-                                                        <button type="button" class="btn btn-icon btn-pure success reserva-ok" title="Confirmar"><i class="fa fa-check"></i></button>
-                                                        <button type="button" class="btn btn-icon btn-pure primary" title="Reagendar"><i class="fa fa-retweet"></i></button>
-                                                        <button type="button" class="btn btn-icon btn-pure danger reserva-cancelada" title="Cancelar"><i class="fa fa-times"></i></button>
-                                                     </div>
-                                                </td>
+                                                <td>Nome da loja 03</td>
+                                                <td>Loja</td>
+                                                <td><a href="mailto:contato@loja.com.br">contato@loja.com.br</a></td>
+                                                <td><a href="tel:01139990099">(11) 3999-0099</a></td>
+                                                <td>Rua Padre Jose Natuzzi, 342</td>
+                                                <td>São Paulo</td>
+                                                <td>SP</td>
+                                                <td><a href="edit-loja.html" class="btn btn-icon btn-pure primary" title="Editar loja"><i class="fa fa-pencil-square-o"></i></a></td>
                                             </tr>
                                         </tbody>
                                     </table>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -423,13 +275,15 @@
 
     <!-- BEGIN: Vendor JS-->
     <script src="../app-assets/vendors/js/vendors.min.js"></script>
-    <script src="../assets/js/scripts.js"></script>
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
-    <script src="../app-assets/vendors/js/charts/apexcharts/apexcharts.min.js"></script>
+    <script src="../app-assets/vendors/js/forms/toggle/bootstrap-checkbox.min.js"></script>
+    <script src="../app-assets/vendors/js/forms/toggle/switchery.min.js"></script>  
+    <script src="../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
     <script src="../app-assets/vendors/js/extensions/sweetalert2.all.min.js"></script>
     <script src="../app-assets/vendors/js/extensions/polyfill.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
@@ -438,8 +292,10 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    <script src="../app-assets/js/scripts/charts/apexcharts/charts-apexcharts.js"></script>
+    <script src="../app-assets/js/scripts/forms/switch.js"></script>
+    <script src="../app-assets/js/scripts/forms/select/form-select2.js"></script>
     <script src="../app-assets/js/scripts/extensions/sweet-alerts.js"></script>
+    <script src="../app-assets/js/scripts/tables/datatables/datatable-basic.js"></script>
     <!-- END: Page JS-->
 
 </body>

@@ -62,8 +62,12 @@ body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content 
     margin-top: 2px !important;
 }
 
-.select2-container--default .select2-selection--multiple, .select2-container--default .select2-selection--single {
+.custom-file-label, .select2-container--default .select2-selection--multiple, .select2-container--default .select2-selection--single {
     border-color: #ccd6e6;
+}
+
+.custom-file-label::after {
+    content: "Escolher arquivo";
 }
 
 .form-control:focus {
