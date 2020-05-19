@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>Empresa - App Tareservado</title>
+    <title>Editar Profissional - App Tareservado</title>
     <link rel="apple-touch-icon" href="../app-assets/images/logo/icone.png">
     <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/logo/icone.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/forms/toggle/switchery.min.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/forms/selects/select2.min.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/animate/animate.css">
-    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/extensions/sweetalert2.min.css">     
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/extensions/sweetalert2.min.css"> 
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -152,15 +152,15 @@
                 <li class="nav-item"><a href="#"><i class="fa fa-pencil-square-o"></i><span class="menu-title">Gerenciar</span></a>                    
                     <ul class="menu-content">
                         <li><a class="menu-item" href="#">Empresa</a>
-                            <ul class="menu-content open">
-                                <li class="active"><a class="menu-item" href="empresa.html">Principal</a></li>
+                            <ul class="menu-content">
+                                <li><a class="menu-item" href="empresa.html">Principal</a></li>
                                 <li><a class="menu-item" href="listar-loja.html">Listar Lojas</a></li>
                                 <li><a class="menu-item" href="add-loja.html">Nova Loja</a></li>
                             </ul>
                         </li>
                         <li><a class="menu-item" href="#">Equipe</a>
-                            <ul class="menu-content">
-                                <li><a class="menu-item" href="listar-profissional.html">Listar Profissionais</a></li>
+                            <ul class="menu-content open">
+                                <li class="active"><a class="menu-item" href="listar-profissional.html">Listar Profissionais</a></li>
                                 <li><a class="menu-item" href="add-profissional.html">Novo Profissional</a></li>
                             </ul>
                         </li>
@@ -187,7 +187,7 @@
         <div class="content-overlay"></div>
         <div class="content-wrapper">
             <div class="content-header row">
-                <h1 class="h4 font-weight-bolder pl-1">Gerenciar Empresa</h1>
+                <h1 class="h4 font-weight-bolder pl-1">Editar Profissional</h1>
             </div>
             <div class="content-body">
                 <div class="row">
@@ -195,278 +195,60 @@
                         <div class="card border-top-3 border-top-primary mb-0">
                             <div class="card-content">
                                 <div class="card-body p-1">
-                                    <label class="h5 font-weight-bolder mb-2">Informações da empresa principal</label>
+                                    <label class="h5 font-weight-bolder mb-2">Informações do profissional</label>
                                     <form accept="#">
                                         <div class="form-body">
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <div class="form-group">
-                                                        <label for="basicInput">Nome da empresa</label>
-                                                        <input type="text" class="form-control" placeholder="Empresa Modelo">
+                                                        <label for="basicInput">Nome completo</label>
+                                                        <input type="text" class="form-control" value="Sena do Alan">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="basicInput">E-mail</label>
-                                                        <input type="email" class="form-control" placeholder="contato@email.com.br">
+                                                        <input type="email" class="form-control" value="sena.alan@loja.com.br">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="basicInput">Telefone</label>
-                                                        <input type="phone" class="form-control" placeholder="(99) 9999-9999">
+                                                        <input type="phone" class="form-control" value="(99) 9999-9999">
                                                     </div>
                                                 </div>
                                             </div>  
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="basicInput">Endereço</label>
-                                                        <input type="text" class="form-control" placeholder="Rua Padre José Natuzzi">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <div class="form-group">
-                                                        <label for="basicInput">Número</label>
-                                                        <input type="text" class="form-control" placeholder="342">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <label for="basicInput">Complemento</label>
-                                                        <input type="text" class="form-control" placeholder="Casa 2">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3">
-                                                    <div class="form-group">
-                                                        <label for="basicInput">Bairro</label>
-                                                        <input type="text" class="form-control" placeholder="Vila Pereira Cerca">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <label for="basicInput">Cidade</label>
-                                                        <input type="text" class="form-control" placeholder="São Paulo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <div class="form-group">
-                                                        <label for="basicInput">Estado</label>
-                                                        <input type="text" class="form-control" placeholder="SP">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div class="form-group">
-                                                        <label for="basicInput">CEP</label>
-                                                        <input type="text" class="form-control" placeholder="02931-090">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-7">
-                                                    <div class="form-group">
-                                                        <label for="basicInput">Quais serviços sua empresa oferece?</label>
-                                                        <select class="select2 form-control" multiple="multiple" id="id_h5_multi">
-                                                            <optgroup label="Autos">
-                                                                <option value="">Alinhamento e Balanceamento</option>
-                                                                <option value="">Auto Elétrico</option>
-                                                                <option value="">Borracharia</option>
-                                                                <option value="">Cambagem</option>
-                                                                <option value="">Carga de Gás Ar Condicionado </option>
-                                                                <option value="">Conserto de Câmbio Manual</option>
-                                                                <option value="">Coserto de Câmbio Automático</option>
-                                                                <option value="">Funilaria</option>
-                                                                <option value="">Limpeza de Ar Condicionado</option>
-                                                                <option value="">Limpeza de Bico</option>
-                                                                <option value="">Martelinho de Ouro</option>
-                                                                <option value="">Mecânica Em Geral</option>
-                                                                <option value="">Pastilha de Freio</option>
-                                                                <option value="">Retifíca de Motor</option>
-                                                                <option value="">Troca de Escapamento</option>
-                                                                <option value="">Troca de Óleo</option>
-                                                                <option value="">Troca do Filtro de Ar</option>
-                                                            </optgroup>
-                                                            <optgroup label="Saúde - Medicina">
-                                                                <option value="">Acupuntura</option>
-                                                                <option value="">Alergia e Imunologia</option>
-                                                                <option value="">Anestesiologia</option>
-                                                                <option value="">Angiologia</option>
-                                                                <option value="">Cancerologia</option>
-                                                                <option value="">Cardiologia</option>
-                                                                <option value="">Cirurgia Cardiovascular</option>
-                                                                <option value="">Cirurgia da Mão</option>
-                                                                <option value="">Cirurgia de Cabeça e Pescoço</option>
-                                                                <option value="">Cirurgia do Aparelho Digestivo</option>
-                                                                <option value="">Cirurgia Geral</option>
-                                                                <option value="">Cirurgia Pediátrica</option>
-                                                                <option value="">Cirurgia Plástica</option>
-                                                                <option value="">Cirurgia Torácica</option>
-                                                                <option value="">Cirurgia Vascular</option>
-                                                                <option value="">Clínica Médica</option>
-                                                                <option value="">Clínico Geral</option>
-                                                                <option value="">Coloproctologia</option>
-                                                                <option value="">Dermatologia</option>
-                                                                <option value="">Endocrinologia e Metabologia</option>
-                                                                <option value="">Endoscopia</option>
-                                                                <option value="">Fisioterapia</option>
-                                                                <option value="">Gastroenterologia</option>
-                                                                <option value="">Genética Médica</option>
-                                                                <option value="">Geriatria</option>
-                                                                <option value="">Ginecologia e Obstetrícia</option>
-                                                                <option value="">Hematologia e Hemoterapia</option>
-                                                                <option value="">Homeopatia</option>
-                                                                <option value="">Infectologia</option>
-                                                                <option value="">Mastologia</option>
-                                                                <option value="">Medicina de Família e Comunidade</option>
-                                                                <option value="">Medicina de Tráfego</option>
-                                                                <option value="">Medicina do Trabalho</option>
-                                                                <option value="">Medicina Esportiva</option>
-                                                                <option value="">Medicina Física e Reabilitação</option>
-                                                                <option value="">Medicina Intensiva</option>
-                                                                <option value="">Medicina Legal e Perícia Médica</option>
-                                                                <option value="">Medicina Nuclear</option>
-                                                                <option value="">Medicina Preventiva e Social</option>
-                                                                <option value="">Nefrologia</option>
-                                                                <option value="">Neurocirurgia</option>
-                                                                <option value="">Neurologia</option>
-                                                                <option value="">Nutrologia</option>
-                                                                <option value="">Oftalmologia</option>
-                                                                <option value="">Ortopedia e Traumatologia</option>
-                                                                <option value="">Otorrinolaringologia</option>
-                                                                <option value="">Patologia</option>
-                                                                <option value="">Patologia Clínica/Medicina Laboratorial</option>
-                                                                <option value="">Pediatria</option>
-                                                                <option value="">Pneumologia</option>
-                                                                <option value="">Psiquiatria</option>
-                                                                <option value="">Radiologia e Diagnóstico por Imagem</option>
-                                                                <option value="">Radioterapia</option>
-                                                                <option value="">Reumatologia</option>
-                                                                <option value="">RPG</option>
-                                                                <option value="">Urologia</option>
-                                                            </optgroup>
-                                                            <optgroup label="Saúde - Dentistas">
-                                                                <option value="">Clareamento</option>
-                                                                <option value="">Clínica Geral</option>
-                                                                <option value="">Endodontia</option>
-                                                                <option value="">Implante Dentário</option>
-                                                                <option value="">Ortodontia</option>
-                                                                <option value="">Periodontia</option>
-                                                                <option value="">Prótese Dentária</option>
-                                                            </optgroup>
-                                                            <optgroup label="Beleza">
-                                                                <option value="">Alisamento</option>
-                                                                <option value="">Barba</option>
-                                                                <option value="">Botox</option>
-                                                                <option value="">Corte de Cabelo</option>
-                                                                <option value="">Corte Feminino</option>
-                                                                <option value="">Corte Infantil</option>
-                                                                <option value="">Corte Masculino</option>
-                                                                <option value="">Depilação</option>
-                                                                <option value="">Design de Sobrancelhas</option>
-                                                                <option value="">Dia da Noiva</option>
-                                                                <option value="">Dia do Noivo</option>
-                                                                <option value="">Escova</option>
-                                                                <option value="">Manicure</option>
-                                                                <option value="">Pedicure</option>
-                                                                <option value="">Penteado</option>
-                                                                <option value="">Progressiva</option>
-                                                                <option value="">Tintura</option>
-                                                            </optgroup>
-                                                            <optgroup label="Estética">
-                                                                <option value="">Aplicação de Vasinhos</option>
-                                                                <option value="">Banho de Lua</option>
-                                                                <option value="">Blefaroplastia</option>
-                                                                <option value="">Botox Toxina Botulínica</option>
-                                                                <option value="">Carboxiterapia</option>
-                                                                <option value="">Criofrequência</option>
-                                                                <option value="">Criolipólise</option>
-                                                                <option value="">Cuidados para o Cabelo</option>
-                                                                <option value="">Depilação a Laser</option>
-                                                                <option value="">Diamond Skin</option>
-                                                                <option value="">Drenagem Corporal</option>
-                                                                <option value="">Drenagem Linfática</option>
-                                                                <option value="">Emagrecimento</option>
-                                                                <option value="">Hidratação de Pés e Mãos</option>
-                                                                <option value="">Hidrolipo</option>
-                                                                <option value="">Limpeza de Pele</option>
-                                                                <option value="">Lipocavitação</option>
-                                                                <option value="">Massagem Esfoliante</option>
-                                                                <option value="">Massagem Relaxante</option>
-                                                                <option value="">Microagulhamentos</option>
-                                                                <option value="">Peeling</option>
-                                                                <option value="">Power Shape</option>
-                                                                <option value="">Preenchimento Facial</option>
-                                                                <option value="">Radiesse</option>
-                                                                <option value="">Rejuvenescimento</option>
-                                                                <option value="">Sculptra</option>
-                                                                <option value="">Skinbooster</option>
-                                                            </optgroup>
-                                                            <optgroup label="Aulas">
-                                                                <option value="">Artes e Artesanato</option>
-                                                                <option value="">Artes Marciais</option>
-                                                                <option value="">Biologia</option>
-                                                                <option value="">Ciências</option>
-                                                                <option value="">Culinária</option>
-                                                                <option value="">Dança</option>
-                                                                <option value="">Finanças</option>
-                                                                <option value="">Física</option>
-                                                                <option value="">Fotografia</option>
-                                                                <option value="">Geografia</option>
-                                                                <option value="">História</option>
-                                                                <option value="">Idiomas</option>
-                                                                <option value="">Informática</option>
-                                                                <option value="">Instrumentos</option>
-                                                                <option value="">Marketing Digital</option>
-                                                                <option value="">Matemática</option>
-                                                                <option value="">Música</option>
-                                                                <option value="">Paisagismo</option>
-                                                                <option value="">Personal Organizer</option>
-                                                                <option value="">Personal Trainer</option>
-                                                                <option value="">Pilates</option>
-                                                                <option value="">Português</option>
-                                                                <option value="">Química</option>
-                                                                <option value="">Yoga</option>
-                                                            </optgroup>
-
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-5">
-                                                    <div class="form-group">
-                                                        <label for="basicInput">Quantos funcionários tem?</label>
-                                                        <select class="form-control">
-                                                            <option value=""></option>
-                                                            <option value="">1 a 5 pessoas</option>
-                                                            <option value="">6 a 15 pessoas</option>
-                                                            <option value="">mais de 15 pessoas</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
                                             
                                             <div class="row">
-                                                <div class="col-12">
-                                                    <fieldset class="form-group">
-                                                        <label for="basicInputFile">Enviar logotipo</label>
-                                                        <div class="custom-file">
-                                                            <input type="file" class="custom-file-input" id="inputGroupFile01">
-                                                            <label class="custom-file-label" for="inputGroupFile01"></label>
-                                                        </div>
-                                                    </fieldset>
-                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="basicInput">Quais serviços ele presta?</label>
+                                                        <select class="select2 form-control" multiple="multiple" id="id_h5_multi">
+                                                            <optgroup label="Beleza e Estética">
+                                                                <option value="" selected>Salão de Beleza</option>
+                                                                <option value="">Manicure e Pedicure</option>
+                                                                <option value="">Salão de Sobrancelhas</option>
+                                                            </optgroup>
+                                                            <optgroup label="Saúde">
+                                                                <option value="">Clínico Geral</option>
+                                                                <option value="">Clínica Ortopédica</option>
+                                                                <option value="">Destista</option>
+                                                            </optgroup>
+                                                            <optgroup label="Autos">
+                                                                <option value="">Mecânica Geral</option>
+                                                                <option value="">Pneus e Borracharia</option>
+                                                                <option value="">Alinhamento e Balanceamento</option>
+                                                            </optgroup>
+                                                            <optgroup label="Aulas">
+                                                                <option value="">Aulas de Idiomas</option>
+                                                                <option value="">Aulas de Yoga</option>
+                                                                <option value="">Personal Trainer</option>
+                                                            </optgroup>
+                                                        </select>
+                                                    </div>
+                                                </div>                                                
                                             </div>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <fieldset>
-                                                        <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" name="customCheck" id="customCheck1">
-                                                            <label class="custom-control-label" for="customCheck1">Não divulgar meu endereço no site e notificações de email.</label>
-                                                        </div>
-                                                    </fieldset>
-                                                </div>   
-                                            </div>
+                                            
                                         </div>
                                     </form>
                                 </div>
@@ -477,7 +259,7 @@
                         <div class="card border-top-3 border-top-primary mb-0">
                             <div class="card-content">
                                 <div class="card-body p-1">
-                                    <label class="h5 font-weight-bolder mb-2">Horário de funcionamento</label>
+                                    <label class="h5 font-weight-bolder mb-2">Horário de trabalho</label>
                                     <form accept="#">
                                         <div class="form-body table-responsive">
                                             <table class="table table-striped ps-container ps-theme-default table-horario-empresa">
@@ -485,10 +267,10 @@
                                                     <tr>
                                                         <th></th>
                                                         <th></th>
-                                                        <th><small>abre</small></th>
-                                                        <th><small>almoço</small></th>
-                                                        <th><small>retorno</small></th>
-                                                        <th><small>fecha</small></th>
+                                                        <th><small>inicia</small></th>
+                                                        <th><small>almoça</small></th>
+                                                        <th><small>retorna</small></th>
+                                                        <th><small>encerra</small></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -560,7 +342,7 @@
 
                 <div class="row mt-2">
                     <div class="col-12">
-                        <button type="button" class="btn btn-success shadow">Atualizar cadastro</button>
+                        <button type="button" class="btn btn-success shadow cadastro-profissional">Atualizar profissional</button>
                     </div>
                 </div>
                 
@@ -587,7 +369,7 @@
     <!-- BEGIN: Page Vendor JS-->
     <script src="../app-assets/vendors/js/forms/toggle/bootstrap-checkbox.min.js"></script>
     <script src="../app-assets/vendors/js/forms/toggle/switchery.min.js"></script>  
-    <script src="../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <script src="../app-assets/vendors/js/forms/select/select2.full.min.js"></script>  
     <script src="../app-assets/vendors/js/extensions/sweetalert2.all.min.js"></script>
     <script src="../app-assets/vendors/js/extensions/polyfill.min.js"></script>
     <!-- END: Page Vendor JS-->

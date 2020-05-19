@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html class="loading" lang="pt" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Editar Serviço - App Tareservado</title>
+    <link rel="apple-touch-icon" href="../app-assets/images/logo/icone.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/logo/icone.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/forms/toggle/switchery.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/forms/selects/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/extensions/sweetalert2.min.css">     
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/components.css">
+    <!-- END: Theme CSS-->
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/fonts/simple-line-icons/style.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/plugins/forms/switch.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu 2-columns fixed-navbar" data-open="click" data-menu="vertical-menu" data-col="2-columns">
+
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar-expand-md navbar navbar-with-menu fixed-top navbar-dark shadow">
+        <div class="navbar-wrapper">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav flex-row align-items-center">
+                    <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="feather icon-menu font-large-1"></i></a></li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="index.html">
+                            <img class="brand-logo" alt="stack admin logo" src="../app-assets/images/logo/icone.png">
+                            <img class="brand-text p-0" alt="stack admin logo" src="../app-assets/images/logo/logo-nome.png">
+                        </a>
+                    </li>
+                    <li class="nav-item d-md-none"><a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="fa fa-ellipsis-v"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-container content">
+                <div class="collapse navbar-collapse" id="navbar-mobile">
+                    <ul class="nav navbar-nav mr-auto float-left align-items-center">
+                        <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="feather icon-menu"></i></a></li>
+                        <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon feather icon-bell"></i><span class="badge badge-pill badge-danger badge-up">3</span></a>
+                            <ul class="dropdown-menu dropdown-menu-media dropdown-menu-left p-0">
+                                <li class="dropdown-menu-header">
+                                    <h6 class="dropdown-header m-0"><span class="grey darken-2">Notificações para Você</span><span class="notification-tag badge badge-danger float-right m-0">3 Novas</span></h6>
+                                </li>
+                                <li class="scrollable-container media-list">
+                                    <a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i class="fa fa-check-circle icon-bg-circle bg-success"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading success darken-1">2 novas reservas</h6>
+                                                <time class="media-meta text-muted font-small-3" datetime="2015-06-11T18:29:20+08:00">30 minutos atrás</time></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"> 
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i class="fa fa-times-circle icon-bg-circle bg-red bg-darken-1"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading red darken-1">1 reserva cancelada</h6>
+                                                <time class="media-meta text-muted font-small-3" datetime="2015-06-11T18:29:20+08:00">1 hora atrás</time></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i class="fa fa-question-circle icon-bg-circle bg-amber"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading amber">1 reserva aguardando aprovação</h6>
+                                                <time class="media-meta text-muted font-small-3" datetime="2015-06-11T18:29:20+08:00">2 horas atrás</time></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="dropdown-menu-footer"><a class="dropdown-item text-muted text-center p-1" href="javascript:void(0)">Ler todas as notificações</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav float-right align-items-center">
+                        <li class="nav-item">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary white mr-1 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-plus-circle"></i>Adicionar</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item font-small-3 pt-1 pb-1" href="add-reserva.html">Reserva</a>
+                                    <a class="dropdown-item font-small-3 pt-1 pb-1" href="add-cliente.html">Cliente</a>
+                                    <a class="dropdown-item font-small-3 pt-1 pb-1" href="add-profissional.html">Profissional</a>
+                                    <a class="dropdown-item font-small-3 pt-1 pb-1" href="add-servico.html">Serviço</a>
+                                    <a class="dropdown-item font-small-3 pt-1 pb-1" href="add-servico.html">Loja</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown-user nav-item">
+                            <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                                <div class="avatar avatar-online"><img src="../app-assets/images/portrait/small/avatar-s-1.png" alt="avatar"><i></i></div><span class="user-name">John Doe</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="user-profile.html"><i class="feather icon-user"></i> Editar perfil</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="login-with-bg-image.html"><i class="feather icon-power"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Header-->
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion shadow pt-1" data-scroll-to-active="true">
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class="nav-item"><a href="index.html"><i class="fa fa-tachometer"></i><span class="menu-title">Painel Inicial</span></a></li>
+                <li class="nav-item"><a href="calendario.html"><i class="fa fa-calendar"></i><span class="menu-title">Agenda</span></a></li>
+                <li class="nav-item"><a href="#"><i class="fa fa-list-alt"></i><span class="menu-title">Reservas</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="listar-reserva.html">Listar Reservas</a></li>
+                        <li><a class="menu-item" href="add-reserva.html">Nova Reserva</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#"><i class="fa fa-address-book-o"></i><span class="menu-title">Clientes</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="listar-cliente.html">Listar Clientes</a></li>
+                        <li><a class="menu-item" href="add-cliente.html">Novo Cliente</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#"><i class="fa fa-pencil-square-o"></i><span class="menu-title">Gerenciar</span></a>                    
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="#">Empresa</a>
+                            <ul class="menu-content">
+                                <li><a class="menu-item" href="empresa.html">Principal</a></li>
+                                <li><a class="menu-item" href="listar-loja.html">Listar Lojas</a></li>
+                                <li><a class="menu-item" href="add-loja.html">Nova Loja</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="menu-item" href="#">Equipe</a>
+                            <ul class="menu-content">
+                                <li><a class="menu-item" href="listar-profissional.html">Listar Profissionais</a></li>
+                                <li><a class="menu-item" href="add-profissional.html">Novo Profissional</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="menu-item" href="#">Serviços</a>
+                            <ul class="menu-content open">
+                                <li class="active"><a class="menu-item" href="listar-servico.html">Listar Serviços</a></li>
+                                <li><a class="menu-item" href="add-servico.html">Novo Serviço</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="menu-item" href="#">Site de Reserva</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#"><i class="fa fa-pie-chart"></i><span class="menu-title">Relatórios</span></a></li>
+                <li class="nav-item"><a href="#"><i class="fa fa-cogs"></i><span class="menu-title">Configurações</span></a></li>            
+                <li class="nav-item"><a href="#"><i class="fa fa-credit-card"></i><span class="menu-title">Planos e Preços</span></a></li>            
+                <li class="nav-item"><a href="#"><i class="fa fa-question-circle-o"></i><span class="menu-title">Ajuda</span></a></li>                        
+            </ul>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <h1 class="h4 font-weight-bolder pl-1">Editar Serviço</h1>
+            </div>
+            <div class="content-body">
+                <div class="row">
+                    <div class="col-md-12 p-1">
+                        <div class="card border-top-3 border-top-primary mb-0">
+                            <div class="card-content">
+                                <div class="card-body p-1">
+                                    <label class="h5 font-weight-bolder mb-2">Informações do serviço</label>
+                                    <form accept="#">
+                                        <div class="form-body">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="basicInput">Nome do serviço</label>
+                                                        <input type="text" class="form-control" value="Corte Masculino">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="basicInput">Tempo de duração</label>
+                                                        <div class="row align-items-center">
+                                                            <div class="col-5 pr-0">
+                                                                <select class="form-control">
+                                                                    <option value="">horas</option>
+                                                                    <option value="" selected>00</option>
+                                                                    <option value="">01</option>
+                                                                    <option value="">02</option>
+                                                                    <option value="">03</option>
+                                                                    <option value="">04</option>
+                                                                    <option value="">05</option>
+                                                                    <option value="">06</option>
+                                                                    <option value="">07</option>
+                                                                    <option value="">08</option>
+                                                                    <option value="">09</option>
+                                                                    <option value="">10</option>
+                                                                    <option value="">11</option>
+                                                                    <option value="">12</option>
+                                                                    <option value="">13</option>
+                                                                    <option value="">14</option>
+                                                                    <option value="">15</option>
+                                                                    <option value="">16</option>
+                                                                    <option value="">17</option>
+                                                                    <option value="">18</option>
+                                                                    <option value="">19</option>
+                                                                    <option value="">20</option>
+                                                                    <option value="">21</option>
+                                                                    <option value="">22</option>
+                                                                    <option value="">23</option>
+                                                                    <option value="">24</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-1 p-0 text-center">:</div>
+                                                            <div class="col-5 pl-0">
+                                                                <select class="form-control">
+                                                                    <option value="">minutos</option>
+                                                                    <option value="">00</option>
+                                                                    <option value="">15</option>
+                                                                    <option value="" selected>30</option>
+                                                                    <option value="">45</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="basicInput">Categoria do serviço</label>
+                                                    <select class="form-control">
+                                                        <option value="">Categoria 01</option>
+                                                        <option value="" selected>Masculino</option>
+                                                        <option value="">Categoria 03</option>
+                                                        <option value="">Categoria 04</option>
+                                                        <option value="">Categoria 05</option>
+                                                    </select>
+                                                </div>
+                                                
+                                            </div>  
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="basicInput">Quais profissionais realizam este serviço?</label>
+                                                        <select class="select2 form-control" multiple="multiple" id="id_h5_multi">
+                                                            <option value="">Nome do Profissional 01</option>
+                                                            <option value="" selected>Sena do Alan</option>
+                                                            <option value="" selected>Helio da Fonseca</option>
+                                                            <option value="">Nome do Profissional 04</option>
+                                                            <option value="">Nome do Profissional 05</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <fieldset class="form-group">
+                                                        <label for="basicInputFile">Enviar imagem do serviço</label>
+                                                        <div class="custom-file">
+                                                            <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                                            <label class="custom-file-label" for="inputGroupFile01"></label>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>                                                
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <fieldset class="form-group">
+                                                        <label for="placeTextarea">Descreva o serviço</label>
+                                                        <textarea class="form-control" id="placeTextarea" rows="3" placeholder="Esta informação aparecerá para seus clientes.">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</textarea>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <button type="button" class="btn btn-success shadow cadastro-servico">Atualizar serviço</button>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light navbar-border">
+        <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span class="float-md-left d-block d-md-inline-block">Copyright &copy; 2020 <a class="text-bold-800 grey darken-2" href="#" target="_blank">tareservado </a></span><span class="float-md-right d-none d-lg-block"></span></p>
+    </footer>
+    <!-- END: Footer-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../app-assets/vendors/js/forms/toggle/bootstrap-checkbox.min.js"></script>
+    <script src="../app-assets/vendors/js/forms/toggle/switchery.min.js"></script>  
+    <script src="../app-assets/vendors/js/forms/select/select2.full.min.js"></script>  
+    <script src="../app-assets/vendors/js/extensions/sweetalert2.all.min.js"></script>
+    <script src="../app-assets/vendors/js/extensions/polyfill.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../app-assets/js/core/app-menu.js"></script>
+    <script src="../app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="../app-assets/js/scripts/forms/switch.js"></script>
+    <script src="../app-assets/js/scripts/forms/select/form-select2.js"></script>
+    <script src="../app-assets/js/scripts/extensions/sweet-alerts.js"></script>
+    <!-- END: Page JS-->
+
+</body>
+<!-- END: Body-->
+
+</html>
