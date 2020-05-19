@@ -201,8 +201,8 @@
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <div class="form-group">
-                                                        <label for="basicInput">Nome da empresa</label>
-                                                        <input type="text" class="form-control" placeholder="Empresa Modelo">
+                                                        <label for="basicInput">Nome do responsável</label>
+                                                        <input type="text" class="form-control" placeholder="João Pedro">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
@@ -217,7 +217,21 @@
                                                         <input type="phone" class="form-control" placeholder="(99) 9999-9999">
                                                     </div>
                                                 </div>
-                                            </div>  
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="basicInput">Nome da empresa</label>
+                                                        <input type="text" class="form-control" placeholder="Nome da Empresa">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="basicInput">CNPJ / CPF</label>
+                                                        <input type="text" class="form-control" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
@@ -267,169 +281,17 @@
                                             <div class="row">
                                                 <div class="col-md-7">
                                                     <div class="form-group">
-                                                        <label for="basicInput">Quais serviços sua empresa oferece?</label>
-                                                        <select class="select2 form-control" multiple="multiple" id="id_h5_multi">
-                                                            <optgroup label="Autos">
-                                                                <option value="">Alinhamento e Balanceamento</option>
-                                                                <option value="">Auto Elétrico</option>
-                                                                <option value="">Borracharia</option>
-                                                                <option value="">Cambagem</option>
-                                                                <option value="">Carga de Gás Ar Condicionado </option>
-                                                                <option value="">Conserto de Câmbio Manual</option>
-                                                                <option value="">Coserto de Câmbio Automático</option>
-                                                                <option value="">Funilaria</option>
-                                                                <option value="">Limpeza de Ar Condicionado</option>
-                                                                <option value="">Limpeza de Bico</option>
-                                                                <option value="">Martelinho de Ouro</option>
-                                                                <option value="">Mecânica Em Geral</option>
-                                                                <option value="">Pastilha de Freio</option>
-                                                                <option value="">Retifíca de Motor</option>
-                                                                <option value="">Troca de Escapamento</option>
-                                                                <option value="">Troca de Óleo</option>
-                                                                <option value="">Troca do Filtro de Ar</option>
-                                                            </optgroup>
-                                                            <optgroup label="Saúde - Medicina">
-                                                                <option value="">Acupuntura</option>
-                                                                <option value="">Alergia e Imunologia</option>
-                                                                <option value="">Anestesiologia</option>
-                                                                <option value="">Angiologia</option>
-                                                                <option value="">Cancerologia</option>
-                                                                <option value="">Cardiologia</option>
-                                                                <option value="">Cirurgia Cardiovascular</option>
-                                                                <option value="">Cirurgia da Mão</option>
-                                                                <option value="">Cirurgia de Cabeça e Pescoço</option>
-                                                                <option value="">Cirurgia do Aparelho Digestivo</option>
-                                                                <option value="">Cirurgia Geral</option>
-                                                                <option value="">Cirurgia Pediátrica</option>
-                                                                <option value="">Cirurgia Plástica</option>
-                                                                <option value="">Cirurgia Torácica</option>
-                                                                <option value="">Cirurgia Vascular</option>
-                                                                <option value="">Clínica Médica</option>
-                                                                <option value="">Clínico Geral</option>
-                                                                <option value="">Coloproctologia</option>
-                                                                <option value="">Dermatologia</option>
-                                                                <option value="">Endocrinologia e Metabologia</option>
-                                                                <option value="">Endoscopia</option>
-                                                                <option value="">Fisioterapia</option>
-                                                                <option value="">Gastroenterologia</option>
-                                                                <option value="">Genética Médica</option>
-                                                                <option value="">Geriatria</option>
-                                                                <option value="">Ginecologia e Obstetrícia</option>
-                                                                <option value="">Hematologia e Hemoterapia</option>
-                                                                <option value="">Homeopatia</option>
-                                                                <option value="">Infectologia</option>
-                                                                <option value="">Mastologia</option>
-                                                                <option value="">Medicina de Família e Comunidade</option>
-                                                                <option value="">Medicina de Tráfego</option>
-                                                                <option value="">Medicina do Trabalho</option>
-                                                                <option value="">Medicina Esportiva</option>
-                                                                <option value="">Medicina Física e Reabilitação</option>
-                                                                <option value="">Medicina Intensiva</option>
-                                                                <option value="">Medicina Legal e Perícia Médica</option>
-                                                                <option value="">Medicina Nuclear</option>
-                                                                <option value="">Medicina Preventiva e Social</option>
-                                                                <option value="">Nefrologia</option>
-                                                                <option value="">Neurocirurgia</option>
-                                                                <option value="">Neurologia</option>
-                                                                <option value="">Nutrologia</option>
-                                                                <option value="">Oftalmologia</option>
-                                                                <option value="">Ortopedia e Traumatologia</option>
-                                                                <option value="">Otorrinolaringologia</option>
-                                                                <option value="">Patologia</option>
-                                                                <option value="">Patologia Clínica/Medicina Laboratorial</option>
-                                                                <option value="">Pediatria</option>
-                                                                <option value="">Pneumologia</option>
-                                                                <option value="">Psiquiatria</option>
-                                                                <option value="">Radiologia e Diagnóstico por Imagem</option>
-                                                                <option value="">Radioterapia</option>
-                                                                <option value="">Reumatologia</option>
-                                                                <option value="">RPG</option>
-                                                                <option value="">Urologia</option>
-                                                            </optgroup>
-                                                            <optgroup label="Saúde - Dentistas">
-                                                                <option value="">Clareamento</option>
-                                                                <option value="">Clínica Geral</option>
-                                                                <option value="">Endodontia</option>
-                                                                <option value="">Implante Dentário</option>
-                                                                <option value="">Ortodontia</option>
-                                                                <option value="">Periodontia</option>
-                                                                <option value="">Prótese Dentária</option>
-                                                            </optgroup>
-                                                            <optgroup label="Beleza">
-                                                                <option value="">Alisamento</option>
-                                                                <option value="">Barba</option>
-                                                                <option value="">Botox</option>
-                                                                <option value="">Corte de Cabelo</option>
-                                                                <option value="">Corte Feminino</option>
-                                                                <option value="">Corte Infantil</option>
-                                                                <option value="">Corte Masculino</option>
-                                                                <option value="">Depilação</option>
-                                                                <option value="">Design de Sobrancelhas</option>
-                                                                <option value="">Dia da Noiva</option>
-                                                                <option value="">Dia do Noivo</option>
-                                                                <option value="">Escova</option>
-                                                                <option value="">Manicure</option>
-                                                                <option value="">Pedicure</option>
-                                                                <option value="">Penteado</option>
-                                                                <option value="">Progressiva</option>
-                                                                <option value="">Tintura</option>
-                                                            </optgroup>
-                                                            <optgroup label="Estética">
-                                                                <option value="">Aplicação de Vasinhos</option>
-                                                                <option value="">Banho de Lua</option>
-                                                                <option value="">Blefaroplastia</option>
-                                                                <option value="">Botox Toxina Botulínica</option>
-                                                                <option value="">Carboxiterapia</option>
-                                                                <option value="">Criofrequência</option>
-                                                                <option value="">Criolipólise</option>
-                                                                <option value="">Cuidados para o Cabelo</option>
-                                                                <option value="">Depilação a Laser</option>
-                                                                <option value="">Diamond Skin</option>
-                                                                <option value="">Drenagem Corporal</option>
-                                                                <option value="">Drenagem Linfática</option>
-                                                                <option value="">Emagrecimento</option>
-                                                                <option value="">Hidratação de Pés e Mãos</option>
-                                                                <option value="">Hidrolipo</option>
-                                                                <option value="">Limpeza de Pele</option>
-                                                                <option value="">Lipocavitação</option>
-                                                                <option value="">Massagem Esfoliante</option>
-                                                                <option value="">Massagem Relaxante</option>
-                                                                <option value="">Microagulhamentos</option>
-                                                                <option value="">Peeling</option>
-                                                                <option value="">Power Shape</option>
-                                                                <option value="">Preenchimento Facial</option>
-                                                                <option value="">Radiesse</option>
-                                                                <option value="">Rejuvenescimento</option>
-                                                                <option value="">Sculptra</option>
-                                                                <option value="">Skinbooster</option>
-                                                            </optgroup>
-                                                            <optgroup label="Aulas">
-                                                                <option value="">Artes e Artesanato</option>
-                                                                <option value="">Artes Marciais</option>
-                                                                <option value="">Biologia</option>
-                                                                <option value="">Ciências</option>
-                                                                <option value="">Culinária</option>
-                                                                <option value="">Dança</option>
-                                                                <option value="">Finanças</option>
-                                                                <option value="">Física</option>
-                                                                <option value="">Fotografia</option>
-                                                                <option value="">Geografia</option>
-                                                                <option value="">História</option>
-                                                                <option value="">Idiomas</option>
-                                                                <option value="">Informática</option>
-                                                                <option value="">Instrumentos</option>
-                                                                <option value="">Marketing Digital</option>
-                                                                <option value="">Matemática</option>
-                                                                <option value="">Música</option>
-                                                                <option value="">Paisagismo</option>
-                                                                <option value="">Personal Organizer</option>
-                                                                <option value="">Personal Trainer</option>
-                                                                <option value="">Pilates</option>
-                                                                <option value="">Português</option>
-                                                                <option value="">Química</option>
-                                                                <option value="">Yoga</option>
-                                                            </optgroup>
-
+                                                        <label for="basicInput">Qual o segmento da empresa?</label>
+                                                        <select class="form-control">
+                                                            <option value=""></option>
+                                                            <option value="">Assistência Técnica</option>
+                                                            <option value="">Aulas</option>
+                                                            <option value="">Autos</option>
+                                                            <option value="">Beleza e Estética</option>
+                                                            <option value="">Consultoria</option>
+                                                            <option value="">Reformas</option>
+                                                            <option value="">Saúde</option>
+                                                            <option value="">Serviços para Casa</option>
                                                         </select>
                                                     </div>
                                                 </div>
