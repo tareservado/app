@@ -17,125 +17,32 @@ $(document).ready(function () {
       scrollTo: { behavior: 'smooth', block: 'center' }
     }
   });
+
   //  tour step added here - Step 1
   tour.addStep({
     title: 'Here is your Search Bar.',
     attachTo: {
-      element: '.nav-search .nav-link-search',
-      on: 'bottom'
+        element: '#heatmap-basic-chart',
+        on: 'top'
     },
     buttons: [{
         action: function () {
-          return this.cancel();
+            return this.cancel();
         },
-        text: "Skip",
+        text: "Sair",
         classes: 'btn',
-      },
-      {
+        },
+        {
         action: function () {
-          return this.next();
+            return this.next();
         },
-        text: 'Next',
+        text: 'Próximo',
         classes: 'btn',
-      }
+        }
     ],
     id: 'welcome'
   });
-  // step 2
-  tour.addStep({
-    title: 'Here is page title.',
-    attachTo: {
-      element: '.breadcrumb-item.active',
-      on: 'bottom'
-    },
-    buttons: [
-
-      {
-        action: function () {
-          return this.cancel();
-        },
-        text: "Skip",
-        classes: 'btn',
-      },
-
-      {
-        action: function () {
-          return this.back();
-        },
-        text: "Previous",
-        classes: 'btn',
-      },
-      {
-        action: function () {
-          return this.next();
-        },
-        text: 'Next',
-        classes: 'btn',
-      },
-    ]
-  });
-
-  // step 3
-  tour.addStep({
-    title: 'Check your notifications from here.',
-    attachTo: {
-      element: '.dropdown-notification .nav-link-label',
-      on: 'bottom'
-    },
-    buttons: [
-
-      {
-        action: function () {
-          return this.cancel();
-        },
-        text: "Skip",
-        classes: 'btn',
-      },
-
-      {
-        action: function () {
-          return this.back();
-        },
-        text: "Previous",
-        classes: 'btn',
-      },
-      {
-        action: function () {
-          return this.next();
-        },
-        text: 'Next',
-        classes: 'btn',
-      },
-    ]
-  });
-
-  // step 4
-  tour.addStep({
-
-    title: 'Setting your page here !!',
-    attachTo: {
-      element: '.content-header-right .btn-group.float-md-right',
-      on: 'bottom'
-    },
-    buttons: [
-      {
-        action: function () {
-          return this.back();
-        },
-        text: "Previous",
-        classes: 'btn',
-      },
-
-      {
-        action: function () {
-          return this.next();
-        },
-        text: "Finish",
-        classes: 'btn',
-      },
-    ],
-  });
-
+  
   // function to remove tour on small screen
   function displayTour() {
     window.resizeEvt;

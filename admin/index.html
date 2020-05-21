@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/charts/apexcharts.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/animate/animate.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/extensions/sweetalert2.min.css">    
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/extensions/shepherd.min.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -29,6 +30,7 @@
     <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/fonts/simple-line-icons/style.min.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/card-statistics.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/ex-component-tour.css"> -->
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -100,9 +102,10 @@
                         </li>
                     </ul>
                     <ul class="nav navbar-nav float-right align-items-center">
+                        <li class="nav-item"><button class="btn btn-blue btn-sm mx-1" id="tour" onclick="tour.start();"><i class="fa fa-graduation-cap"></i> Iniciar Guia</button></li>
                         <li class="nav-item">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-primary white mr-1 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-plus-circle"></i>Adicionar</button>
+                                <button type="button" class="btn btn-primary btn-sm white mr-1 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-plus-circle"></i>Adicionar</button>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item font-small-3 pt-1 pb-1" href="add-reserva.html">Reserva</a>
                                     <a class="dropdown-item font-small-3 pt-1 pb-1" href="add-cliente.html">Cliente</a>
@@ -187,9 +190,10 @@
         <div class="content-overlay"></div>
         <div class="content-wrapper">
             <div class="content-header row">
-                <h1 class="h5 font-weight-bolder pb-0 pl-1 text-sm-center">Segunda-feira, 11 de maio de 2020</h1>                
+                <h1 class="h5 font-weight-bolder pb-0 pl-1 text-sm-center">Segunda-feira, 11 de maio de 2020</h1>            
             </div>
             <div class="content-body">
+                                 
                 <div class="row match-height mb-1">
                     <div class="col-xl-3 col-sm-6 col-12 p-1">
                         <div class="card mb-0">
@@ -197,8 +201,8 @@
                                 <div class="card-body">
                                     <div class="media d-flex">
                                         <div class="media-body text-left">
-                                            <h3 class="danger">6 reservas</h3>
-                                            <span>Para aprovar</span><br>
+                                            <h3 class="danger">1600 <small class="font-medium-2">reservas</small></h3>
+                                            <span class="font-small-3">Para aprovar</span><br>
                                             <button type="button" class="btn btn-outline-danger btn-sm mt-1">ver reservas</button>
                                         </div>
                                         <div class="align-self-top">
@@ -215,8 +219,8 @@
                                 <div class="card-body">
                                     <div class="media d-flex">
                                         <div class="media-body text-left">
-                                            <h3 class="success">11 reservas</h3>
-                                            <span>Confirmadas hoje</span><br>
+                                            <h3 class="success">1211 <small class="font-medium-2">reservas</small></h3>
+                                            <span class="font-small-3">Confirmadas hoje</span><br>
                                             <button type="button" class="btn btn-outline-success btn-sm mt-1">ver reservas</button>
                                         </div>
                                         <div class="align-self-top">
@@ -233,8 +237,8 @@
                                 <div class="card-body">
                                     <div class="media d-flex">
                                         <div class="media-body text-left">
-                                            <h3 class="teal">47 reservas</h3>
-                                            <span>Últimos 7 dias</span><br>
+                                            <h3 class="teal">1247 <small class="font-medium-2">reservas</small></h3>
+                                            <span class="font-small-3">Últimos 7 dias</span><br>
                                             <button type="button" class="btn btn-outline-teal btn-sm mt-1">ver reservas</button>
                                         </div>
                                         <div class="align-self-top">
@@ -251,8 +255,8 @@
                                 <div class="card-body">
                                     <div class="media d-flex">
                                         <div class="media-body text-left">
-                                            <h3 class="blue">29 clientes</h3>
-                                            <span>Últimos 7 dias</span><br>
+                                            <h3 class="blue">2229 <small class="font-medium-2">clientes</small></h3>
+                                            <span class="font-small-3">Últimos 7 dias</span><br>
                                             <button type="button" class="btn btn-outline-blue btn-sm mt-1">ver clientes</button>
                                         </div>
                                         <div class="align-self-top">
@@ -268,7 +272,7 @@
                 <div class="row match-height">
                     <div class="col-xl-6 col-lg-12">
                         <!-- Line Basic Chart Start -->
-                        <div class="card">
+                        <div class="card" id="tourteste">
                             <div class="card-body">
                                 <div class="card-title">Reservas nos Últimos 7 dias</div>
                                 <div id="line-basic-chart"></div>
@@ -430,6 +434,7 @@
     <script src="../app-assets/vendors/js/charts/apexcharts/apexcharts.min.js"></script>
     <script src="../app-assets/vendors/js/extensions/sweetalert2.all.min.js"></script>
     <script src="../app-assets/vendors/js/extensions/polyfill.min.js"></script>
+    <script src="../app-assets/vendors/js/extensions/shepherd.min.js"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
@@ -440,7 +445,60 @@
     <!-- BEGIN: Page JS-->
     <script src="../app-assets/js/scripts/charts/apexcharts/charts-apexcharts.js"></script>
     <script src="../app-assets/js/scripts/extensions/sweet-alerts.js"></script>
+    <!-- <script src="../app-assets/js/scripts/pages/ex-component-tour.js"></script> -->
     <!-- END: Page JS-->
+
+    <script>
+        const tour = new Shepherd.Tour({
+        defaultStepOptions: {
+            cancelIcon: {
+            enabled: true
+            },
+            classes: 'tour-container shadow-md bg-purple-dark',
+            scrollTo: { behavior: 'smooth', block: 'center' }
+        },
+        useModalOverlay: true
+        });
+
+        tour.addStep({
+        title: 'Creating a Shepherd Tour',
+        text: `Creating a Shepherd tour is easy. too!\
+        Just create a \`Tour\` instance, and add as many steps as you want.`,
+        attachTo: {
+            element: '#tourteste',
+            on: 'bottom'
+        },
+        buttons: [
+            {
+            action() {
+                return this.back();
+            },
+            classes: 'shepherd-button-secondary',
+            text: 'Back'
+            },
+            {
+            action() {
+                return this.next();
+            },
+            text: 'Next'
+            }
+        ],
+        id: 'creating'
+        });
+
+        
+    </script>
+
+    <script type="text/javascript"
+    id="botcopy-embedder-d7lcfheammjct"
+    class="botcopy-embedder-d7lcfheammjct" 
+    data-botId="5ec6c9a37a219f0008392b2f"
+    >
+    var s = document.createElement('script'); 
+    s.type = 'text/javascript'; s.async = true; 
+    s.src = 'https://widget.botcopy.com/js/injection.js'; 
+    document.getElementById('botcopy-embedder-d7lcfheammjct').appendChild(s);
+    </script>
 
 </body>
 <!-- END: Body-->
