@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>Painel Inicial - App Tareservado</title>
+    <title>tareservado - Painel Inicial</title>
     <link rel="apple-touch-icon" href="../app-assets/images/logo/icone.png">
     <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/logo/icone.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
@@ -30,7 +30,6 @@
     <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/fonts/simple-line-icons/style.min.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/card-statistics.css">
-    <!-- <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/ex-component-tour.css"> -->
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -196,7 +195,7 @@
                                  
                 <div class="row match-height mb-1">
                     <div class="col-xl-3 col-sm-6 col-12 p-1">
-                        <div class="card mb-0">
+                        <div class="card mb-0" id="reserva-pendente">
                             <div class="card-content">
                                 <div class="card-body">
                                     <div class="media d-flex">
@@ -214,7 +213,7 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-sm-6 col-12 p-1">
-                        <div class="card mb-0">
+                        <div class="card mb-0" id="reserva-confirmada">
                             <div class="card-content">
                                 <div class="card-body">
                                     <div class="media d-flex">
@@ -445,7 +444,6 @@
     <!-- BEGIN: Page JS-->
     <script src="../app-assets/js/scripts/charts/apexcharts/charts-apexcharts.js"></script>
     <script src="../app-assets/js/scripts/extensions/sweet-alerts.js"></script>
-    <!-- <script src="../app-assets/js/scripts/pages/ex-component-tour.js"></script> -->
     <!-- END: Page JS-->
 
     <script>
@@ -454,18 +452,43 @@
             cancelIcon: {
             enabled: true
             },
-            classes: 'tour-container shadow-md bg-purple-dark',
+            classes: 'tour-container',
             scrollTo: { behavior: 'smooth', block: 'center' }
         },
         useModalOverlay: true
         });
 
         tour.addStep({
-        title: 'Creating a Shepherd Tour',
-        text: `Creating a Shepherd tour is easy. too!\
-        Just create a \`Tour\` instance, and add as many steps as you want.`,
+        title: 'Reservas aguardando sua aprovação',
+        text: 'Aqui você acessa as reservas que aguardam sua aprovação.',
         attachTo: {
-            element: '#tourteste',
+            element: '#reserva-pendente',
+            on: 'bottom'
+        },
+        buttons: [
+            {
+            action() {
+                return this.cancel();
+            },
+            classes: 'btn btn-outline-info btn-sm',
+            text: 'sair'
+            },
+            {
+            action() {
+                return this.next();
+            },
+            classes: 'btn btn-outline-info btn-sm',
+            text: 'próximo'
+            }
+        ],
+        id: 'creating'
+        });
+
+        tour.addStep({
+        title: 'Reservas aguardando sua aprovação',
+        text: 'Aqui você acessa as reservas que aguardam sua aprovação.',
+        attachTo: {
+            element: '#reserva-confirmada',
             on: 'bottom'
         },
         buttons: [
@@ -473,31 +496,31 @@
             action() {
                 return this.back();
             },
-            classes: 'shepherd-button-secondary',
-            text: 'Back'
+            classes: 'btn btn-outline-info btn-sm',
+            text: 'voltar'
             },
             {
             action() {
                 return this.next();
             },
-            text: 'Next'
+            classes: 'btn btn-outline-info btn-sm',
+            text: 'próximo'
             }
-        ],
-        id: 'creating'
+        ]
         });
 
         
     </script>
 
     <script type="text/javascript"
-    id="botcopy-embedder-d7lcfheammjct"
-    class="botcopy-embedder-d7lcfheammjct" 
-    data-botId="5ec6c9a37a219f0008392b2f"
-    >
-    var s = document.createElement('script'); 
-    s.type = 'text/javascript'; s.async = true; 
-    s.src = 'https://widget.botcopy.com/js/injection.js'; 
-    document.getElementById('botcopy-embedder-d7lcfheammjct').appendChild(s);
+        id="botcopy-embedder-d7lcfheammjct"
+        class="botcopy-embedder-d7lcfheammjct" 
+        data-botId="5ec6c9a37a219f0008392b2f"
+        >
+        var s = document.createElement('script'); 
+        s.type = 'text/javascript'; s.async = true; 
+        s.src = 'https://widget.botcopy.com/js/injection.js'; 
+        document.getElementById('botcopy-embedder-d7lcfheammjct').appendChild(s);
     </script>
 
 </body>

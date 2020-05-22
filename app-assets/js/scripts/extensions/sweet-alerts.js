@@ -157,6 +157,16 @@ $(document).ready(function() {
 
   // type
 
+  $(".btn-finalizar").on("click", function() {
+    Swal.fire({
+      title: "Seja bem vindo ao tareservado! 👏",
+      text: "Desejamos muitas reservas para seu negócio.",
+      type: "success",
+      confirmButtonClass: "btn btn-success",
+      buttonsStyling: false
+    });
+  });
+
 
   $(".cadastro-cliente").on("click", function() {
     Swal.fire({

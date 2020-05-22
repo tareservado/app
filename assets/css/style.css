@@ -92,3 +92,37 @@ body.vertical-layout.vertical-menu.menu-collapsed .main-menu .navigation > li > 
 .table-horario-empresa input::-webkit-input-placeholder {
     text-align: center;
 }
+
+.shepherd-content {
+    background: #e6fcff !important;
+    color: #1b2942 !important;
+}
+
+.shepherd-element.shepherd-element-attached-bottom.shepherd-element-attached-center .shepherd-arrow, .shepherd-element.shepherd-pinned-top .shepherd-arrow {
+    border-top-color: #c4f6fc !important;
+}
+
+.shepherd-element.shepherd-element-attached-top.shepherd-element-attached-center.shepherd-has-title .shepherd-arrow {
+    border-bottom-color: #c4f6fc !important;
+}
+
+.shepherd-element.shepherd-element-attached-middle.shepherd-element-attached-left .shepherd-arrow, .shepherd-element.shepherd-pinned-right .shepherd-arrow {
+    border-right-color: #c4f6fc !important;
+}
+
+.shepherd-text {
+    font-size: 13px;
+    line-height: 150%;
+    padding: 0 15px 15px;
+}
+
+.shepherd-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.shepherd-has-title .shepherd-content .shepherd-header {
+    padding: 7px 15px 5px;
+    background: #e6fcff !important;
+    color: #1b2942 !important;
+}
