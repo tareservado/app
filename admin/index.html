@@ -30,6 +30,7 @@
     <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/fonts/simple-line-icons/style.min.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/card-statistics.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -187,79 +188,88 @@
     <!-- BEGIN: Content-->
     <div class="app-content content">
         <div class="content-overlay"></div>
-        <div class="content-wrapper">
-            <div class="content-header row">
-                <h1 class="h5 font-weight-bolder pb-0 pl-1 text-sm-center">Segunda-feira, 11 de maio de 2020</h1>            
-            </div>
+        <div class="content-wrapper px-1">
+            <div class="content-header row align-items-center">
+                <div class="col-sm-6 col-12 text-sm-left mb-2 text-center text-sm-left">
+                    <h1 class="h5 font-weight-bolder mb-0">Segunda-feira, 11 de maio de 2020</h1>
+                </div>
+                <div class="col-sm-6 col-12 text-sm-right mb-2 text-center text-sm-right">
+                    <p class="d-inline font-small-3 text-muted">Escolha o período: </p>             
+                    <div id="reportrange" class="border rounded d-inline" style="cursor: pointer; margin-left: 3px; width: auto; background: #fff; padding: 5px 10px; text-align: center; box-shadow: 0 0 5px #ededed;">
+                        <i class="fa fa-calendar"></i> <span style="padding: 0 5px"></span> <i class="fa fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>    
+
             <div class="content-body">
                                  
-                <div class="row match-height mb-1">
-                    <div class="col-xl-3 col-sm-6 col-12 p-1">
+                <div class="row match-height mb-1 px-1">
+                    <div class="col-sm-3 col-12 px-c1">
                         <div class="card mb-0" id="reserva-pendente">
                             <div class="card-content">
                                 <div class="card-body">
                                     <div class="media d-flex">
                                         <div class="media-body text-left">
-                                            <h3 class="danger">1600 <small class="font-medium-2">reservas</small></h3>
-                                            <span class="font-small-3">Para aprovar</span><br>
+                                            <h3 class="danger">34 <small class="font-medium-2">reservas</small></h3>
+                                            <span class="font-small-3">Aguadando aprovação</span><br>
                                             <button type="button" class="btn btn-outline-danger btn-sm mt-1">ver reservas</button>
                                         </div>
                                         <div class="align-self-top">
-                                            <i class="fa fa-calendar-plus-o danger font-large-2 float-right"></i>
+                                            <i class="far fa-calendar danger font-large-2 float-right"></i>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-sm-6 col-12 p-1">
+                    <div class="col-sm-3 col-12 px-c1">
+                        <div class="card mb-0" id="reserva-confirmada-hoje">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="media d-flex">
+                                        <div class="media-body text-left">
+                                            <h3 class="primary">39 <small class="font-medium-2">reservas</small></h3>
+                                            <span class="font-small-3">Aprovadas</span><br>
+                                            <button type="button" class="btn btn-outline-primary btn-sm mt-1">ver reservas</button>
+                                        </div>
+                                        <div class="align-self-top">
+                                            <i class="fa fa-calendar-check-o primary font-large-2 float-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-12 px-c1">
                         <div class="card mb-0" id="reserva-confirmada">
                             <div class="card-content">
                                 <div class="card-body">
                                     <div class="media d-flex">
                                         <div class="media-body text-left">
-                                            <h3 class="success">1211 <small class="font-medium-2">reservas</small></h3>
-                                            <span class="font-small-3">Confirmadas hoje</span><br>
+                                            <h3 class="success">48 <small class="font-medium-2">reservas</small></h3>
+                                            <span class="font-small-3">Já atendidas</span><br>
                                             <button type="button" class="btn btn-outline-success btn-sm mt-1">ver reservas</button>
                                         </div>
                                         <div class="align-self-top">
-                                            <i class="fa fa-calendar-check-o success font-large-2 float-right"></i>
+                                            <i class="fas fa-calendar-check success font-large-2 float-right"></i>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-sm-6 col-12 p-1">
-                        <div class="card mb-0">
+                    <div class="col-sm-3 col-12 px-c1">
+                        <div class="card mb-0" id="total-clientes">
                             <div class="card-content">
                                 <div class="card-body">
                                     <div class="media d-flex">
                                         <div class="media-body text-left">
-                                            <h3 class="teal">1247 <small class="font-medium-2">reservas</small></h3>
-                                            <span class="font-small-3">Últimos 7 dias</span><br>
-                                            <button type="button" class="btn btn-outline-teal btn-sm mt-1">ver reservas</button>
-                                        </div>
-                                        <div class="align-self-top">
-                                            <i class="fa fa-calendar teal font-large-2 float-right"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 col-12 p-1">
-                        <div class="card mb-0">
-                            <div class="card-content">
-                                <div class="card-body">
-                                    <div class="media d-flex">
-                                        <div class="media-body text-left">
-                                            <h3 class="blue">2229 <small class="font-medium-2">clientes</small></h3>
-                                            <span class="font-small-3">Últimos 7 dias</span><br>
+                                            <h3 class="blue">74 <small class="font-medium-2">clientes</small></h3>
+                                            <span class="font-small-3">Já atendidos</span><br>
                                             <button type="button" class="btn btn-outline-blue btn-sm mt-1">ver clientes</button>
                                         </div>
                                         <div class="align-self-top">
-                                            <i class="fa fa-address-book-o blue font-large-2 float-right"></i>
+                                            <i class="fa fa-user-check blue font-large-2 float-right"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -268,31 +278,33 @@
                     </div>
                 </div>
 
-                <div class="row match-height">
-                    <div class="col-xl-6 col-lg-12">
+                <div class="row match-height my-1 px-1">
+                    <div class="col-md-6 col-12 px-c1">
                         <!-- Line Basic Chart Start -->
-                        <div class="card" id="tourteste">
+                        <div class="card my-0">
                             <div class="card-body">
-                                <div class="card-title">Reservas nos Últimos 7 dias</div>
+                                <div class="card-title mb-0">Evolução dia a dia de Reservas</div>
                                 <div id="line-basic-chart"></div>
+                                <small class="text-muted">Evolução de reservas realizadas por dia nos últimos 7 dias.</small>
                             </div>
                         </div>
                         <!-- line basic chart end -->
                     </div>
-                    <div class="col-xl-6 col-lg-12">
+                    <div class="col-md-6 col-12 px-c1">
                         <!-- Heatmap Basic Chart Start -->
-                        <div class="card">
+                        <div class="card my-0">
                             <div class="card-body">
-                                <div class="card-title">Reservas por horário do dia</div>
+                                <div class="card-title mb-0">Reservas por horário do dia</div>
                                 <div id="heatmap-basic-chart"></div>
+                                <small class="text-muted">Quanto mais escuro for o quadrado, maior o número de reservas.</small>
                             </div>
                         </div>
                         <!-- Heatmap Basic Chart end -->
                     </div>
                 </div>
 
-                <div class="row match-height">
-                    <div class="col-12">
+                <div class="row match-height px-1">
+                    <div class="col-12 px-c1">
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Reservas Recentes</h4>
@@ -439,19 +451,76 @@
     <!-- BEGIN: Theme JS-->
     <script src="../app-assets/js/core/app-menu.js"></script>
     <script src="../app-assets/js/core/app.js"></script>
+    <script src="https://kit.fontawesome.com/99bf7606df.js" crossorigin="anonymous"></script>
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
     <script src="../app-assets/js/scripts/charts/apexcharts/charts-apexcharts.js"></script>
     <script src="../app-assets/js/scripts/extensions/sweet-alerts.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>    
     <!-- END: Page JS-->
+
+    <script type="text/javascript">
+        $(function() {
+        
+            var start = moment().subtract(6, 'days');
+            var end = moment();
+        
+            function cb(start, end) {
+                $('#reportrange span').html(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'));
+            }
+        
+            $('#reportrange').daterangepicker({
+                startDate: start,
+                endDate: end,
+                ranges: {
+                   'Hoje': [moment(), moment()],
+                   'Ontem': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                   'Últimos 7 dias': [moment().subtract(6, 'days'), moment()],
+                   'Últimos 30 dias': [moment().subtract(29, 'days'), moment()],
+                   'Este mês': [moment().startOf('month'), moment().endOf('month')],
+                   'Mês passado': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                },
+                locale: {
+                    "applyLabel": "Aplicar",
+                    "cancelLabel": "Cancelar",
+                    "customRangeLabel": "Escolher datas",
+                    "daysOfWeek": [
+                        "Dom",
+                        "Seg",
+                        "Ter",
+                        "Qua",
+                        "Qui",
+                        "Sex",
+                        "Sab"
+                    ],
+                    "monthNames": [
+                        "Janeiro",
+                        "Fevereiro",
+                        "Março",
+                        "Abril",
+                        "Maio",
+                        "Junho",
+                        "Julho",
+                        "Agosto",
+                        "Setembro",
+                        "Outubro",
+                        "Novembro",
+                        "Dezembro"
+                    ]
+                }
+            }, cb);
+        
+            cb(start, end);
+        
+        });
+    </script>
 
     <script>
         const tour = new Shepherd.Tour({
         defaultStepOptions: {
-            cancelIcon: {
-            enabled: true
-            },
+            cancelIcon: {enabled: true},
             classes: 'tour-container',
             scrollTo: { behavior: 'smooth', block: 'center' }
         },
@@ -459,56 +528,46 @@
         });
 
         tour.addStep({
-        title: 'Reservas aguardando sua aprovação',
-        text: 'Aqui você acessa as reservas que aguardam sua aprovação.',
-        attachTo: {
-            element: '#reserva-pendente',
-            on: 'bottom'
-        },
+            title: 'Total de Reservas Pendentes',
+            text: 'Veja todas as reservas que aguardam a sua aprovação.',
+        attachTo: { element: '#reserva-pendente', on: 'right'},
         buttons: [
-            {
-            action() {
-                return this.cancel();
-            },
-            classes: 'btn btn-outline-info btn-sm',
-            text: 'sair'
-            },
-            {
-            action() {
-                return this.next();
-            },
-            classes: 'btn btn-outline-info btn-sm',
-            text: 'próximo'
-            }
-        ],
-        id: 'creating'
+            { action() { return this.next(); },
+            classes: 'btn btn-outline-info btn-sm', text: 'próximo' } ],
+        id: 'creating' });
+
+        tour.addStep({
+        title: 'Reservas Aprovadas',
+        text: 'Veja todas as reservas aprovadas, mas que o serviço ainda não foi atendido.',
+        attachTo: { element: '#reserva-confirmada-hoje', on: 'bottom' },
+        buttons: [
+            { action() { return this.back(); },
+            classes: 'btn btn-outline-info btn-sm', text: 'voltar' },
+            { action() { return this.next(); },
+            classes: 'btn btn-outline-info btn-sm', text: 'próximo' } ]
         });
 
         tour.addStep({
-        title: 'Reservas aguardando sua aprovação',
-        text: 'Aqui você acessa as reservas que aguardam sua aprovação.',
-        attachTo: {
-            element: '#reserva-confirmada',
-            on: 'bottom'
-        },
+        title: 'Total de Reservas Atendidas',
+        text: 'Veja todas as reservas que já foram atendidas por sua empresa.',
+        attachTo: { element: '#reserva-confirmada', on: 'bottom' },
         buttons: [
-            {
-            action() {
-                return this.back();
-            },
-            classes: 'btn btn-outline-info btn-sm',
-            text: 'voltar'
-            },
-            {
-            action() {
-                return this.next();
-            },
-            classes: 'btn btn-outline-info btn-sm',
-            text: 'próximo'
-            }
-        ]
+            { action() { return this.back(); },
+            classes: 'btn btn-outline-info btn-sm', text: 'voltar' },
+            { action() { return this.next(); },
+            classes: 'btn btn-outline-info btn-sm', text: 'próximo' } ]
         });
 
+        tour.addStep({
+        title: 'Total de Clientes',
+        text: 'Veja todos os clientes que foram atendidos.',
+        attachTo: { element: '#total-clientes', on: 'bottom' },
+        buttons: [
+        { action() { return this.back(); },
+            classes: 'btn btn-outline-info btn-sm', text: 'voltar' },
+            { action() { return this.cancel(); },
+            classes: 'btn btn-outline-info btn-sm', text: 'sair' } ]
+        });
         
     </script>
 
