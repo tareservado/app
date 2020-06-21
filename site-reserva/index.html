@@ -49,29 +49,28 @@
                 </div>
                 <div class="col-12 col-sm-8 pt-2 pt-sm-0" id="nav">
                     <nav class="d-flex flex-column flex-md-row justify-content-end align-items-sm-center">
-                        <a class="nav-link mx-sm-1 text-bold-600 white" href="#"><i class="fas fa-bars mr-1"></i>Serviços</a>
-                        <a class="nav-link mx-sm-1 text-bold-600 white" href="#"><i class="fas fa-bars mr-1"></i>Profissionais</a>
-                        <a class="nav-link mx-sm-1 text-bold-600 white" href="#"><i class="fas fa-bars mr-1"></i>Mais informações</a>
-                        <a class="nav-link mx-sm-1 text-bold-600 white" href="#"><i class="fas fa-bars mr-1"></i>Contato</a>
+                        <a class="nav-link mx-sm-1 text-bold-600 white link-scroll" href="#servicos"><i class="fas fa-bars mr-1"></i>Nossos serviços</a>
+                        <a class="nav-link mx-sm-1 text-bold-600 white link-scroll" href="#maisinfo"><i class="fas fa-bars mr-1"></i>Mais informações</a>
+                        <a class="nav-link mx-sm-1 text-bold-600 white link-scroll" href="#maisinfo"><i class="fas fa-bars mr-1"></i>Contato</a>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="w-100 bg-white pt-2">
+    <main class="w-100 bg-white pt-3">
         <div class="container pb-3">
             <div class="row">
                 <div class="col-12 col-sm-7 order-2 order-sm-1 text-center text-sm-left">
                     <h2 class="h1 titulo pt-sm-3 py-1 pr-2">Nós da Barbearia do Sena buscamos oferecer o melhor serviço e atendimento aos nossos clientes.</h2>
-                    <button class="btn btn-outline-dark shadow btn-lg text-bold-600">Conheça nossos serviços<i class="fa fa-caret-down ml-1"></i></button>
+                    <button class="btn btn-outline-dark shadow-sm btn-lg text-bold-600 link-scroll" href="#destaques">Conheça nossos serviços<i class="fa fa-caret-down ml-1"></i></button>
                 </div>    
                 <div class="col-12 col-sm-5 order-1 order-sm-2">
                     <img class="img-fluid" src="/app/assets/svg/barber.svg">
                 </div>             
             </div>
         </div>
-        <div class="container pb-3">
+        <div class="container pb-3" id="destaques">
             <div class="row">
                 <div class="col-12">
                     <h3 class="text-bold-600 pb-2"><i class="fas fa-tags mr-1"></i>Destaques</h3>
@@ -79,9 +78,9 @@
             </div>
             <div class="row match-height">
                <div class="col-12 col-sm-4">
-                    <div class="card">
+                    <div class="card rounded">
                         <div class="card-content">
-                            <img src="/app/assets/img/barber1.jpg" class="card-img-top">
+                            <img src="/app/assets/img/barber1.jpg" class="card-img-top rounded-top">
                             <div class="card-body">
                                 <h4 class="text-bold-600">Corte de Cabelo</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
@@ -93,9 +92,9 @@
                     </div>
                 </div>    
                 <div class="col-12 col-sm-4">
-                    <div class="card">
+                    <div class="card rounded">
                         <div class="card-content">
-                            <img src="/app/assets/img/barber2.jpg" class="card-img-top">
+                            <img src="/app/assets/img/barber2.jpg" class="card-img-top rounded-top">
                             <div class="card-body">
                                 <h4 class="text-bold-600">Corte de Cabelo</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
@@ -107,9 +106,9 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-4">
-                    <div class="card">
+                    <div class="card rounded">
                         <div class="card-content">
-                            <img src="/app/assets/img/barber3.jpg" class="card-img-top">
+                            <img src="/app/assets/img/barber3.jpg" class="card-img-top rounded-top">
                             <div class="card-body">
                                 <h4 class="text-bold-600">Corte de Cabelo</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
@@ -122,15 +121,19 @@
                 </div>  
             </div>
         </div>
-        <div class="container pb-3">
-            <div class="row">
-                <div class="col-12">
-                    <h3 class="text-bold-600 pb-2"><i class="fas fa-tags mr-1"></i>Nossos serviços</h3>
-                </div>
+        <div class="container pb-3" id="servicos">
+            <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-between">
+                <h3 class="text-bold-600 mb-1 mb-sm-2"><i class="fas fa-tags mr-1"></i>Nossos serviços</h3>
+                <fieldset class="form-group position-relative mb-1 mb-sm-2">
+                    <input type="text" class="form-control shadow-sm" placeholder="Pesquisar serviço">
+                    <div class="form-control-position">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </fieldset>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="card mb-1">
+                    <div class="card mb-1 rounded">
                         <div class="card-content">
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -155,7 +158,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="card mb-1">
+                    <div class="card mb-1 rounded">
                         <div class="card-content">
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -180,7 +183,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="card mb-1">
+                    <div class="card mb-1 rounded">
                         <div class="card-content">
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -205,7 +208,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="card mb-1">
+                    <div class="card mb-1 rounded">
                         <div class="card-content">
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -230,7 +233,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="card mb-1">
+                    <div class="card mb-1 rounded">
                         <div class="card-content">
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -252,11 +255,137 @@
                         </div>
                     </div> 
                 </div>                                   
+            </div>
+            <div class="d-flex flex-row align-items-center justify-content-center justify-content-sm-end mt-2">
+                <a href="#" class="p-1 secondary rounded bg-blue-grey bg-lighten-5"><i class="fa fa-caret-left"></i></a>
+                <a href="#" class="ml-1 p-1 secondary rounded bg-blue-grey bg-lighten-4 text-bold-600">01</a>
+                <a href="#" class="ml-1 p-1 secondary rounded bg-blue-grey bg-lighten-5">02</a>
+                <a href="#" class="ml-1 p-1 secondary rounded bg-blue-grey bg-lighten-5">03</a>
+                <a href="#" class="ml-1 p-1 secondary rounded bg-blue-grey bg-lighten-5">04</a>
+                <a href="#" class="ml-1 p-1 secondary rounded bg-blue-grey bg-lighten-5">05</a>
+                <a href="#" class="ml-1 p-1 secondary rounded bg-blue-grey bg-lighten-5"><i class="fa fa-caret-right"></i></a>
             </div>
         </div>
     </main>
 
-    <footer class="w-100 bg-dark white">
+    <footer class="w-100 bg-dark" id="maisinfo">
+        <div class="container-fluid px-sm-3 bg-blue-grey bg-lighten-5 pt-3 text-left">
+            <div class="row">
+                <div class="col-12 col-sm-4 pb-2">
+                    <h3 class="text-bold-600 pb-1 h5"><i class="far fa-clock mr-1"></i>Horário de funcionamento</h3>
+                    <div class="row px-2">
+                        <div class="col-4">
+                            <p>Segunda</p>
+                        </div>
+                        <div class="col-4">
+                            <p>08:00</p>
+                        </div>
+                        <div class="col-4">
+                            <p>20:00</p>
+                        </div>
+                    </div>
+                    <div class="row px-2">
+                        <div class="col-4">
+                            <p>Terça</p>
+                        </div>
+                        <div class="col-4">
+                            <p>08:00</p>
+                        </div>
+                        <div class="col-4">
+                            <p>20:00</p>
+                        </div>
+                    </div>
+                    <div class="row px-2">
+                        <div class="col-4">
+                            <p>Quarta</p>
+                        </div>
+                        <div class="col-4">
+                            <p>08:00</p>
+                        </div>
+                        <div class="col-4">
+                            <p>20:00</p>
+                        </div>
+                    </div>
+                    <div class="row px-2">
+                        <div class="col-4">
+                            <p>Quinta</p>
+                        </div>
+                        <div class="col-4">
+                            <p>08:00</p>
+                        </div>
+                        <div class="col-4">
+                            <p>20:00</p>
+                        </div>
+                    </div>
+                    <div class="row px-2">
+                        <div class="col-4">
+                            <p>Sexta</p>
+                        </div>
+                        <div class="col-4">
+                            <p>08:00</p>
+                        </div>
+                        <div class="col-4">
+                            <p>20:00</p>
+                        </div>
+                    </div>
+                    <div class="row px-2">
+                        <div class="col-4">
+                            <p>Sábado</p>
+                        </div>
+                        <div class="col-4">
+                            <p>08:00</p>
+                        </div>
+                        <div class="col-4">
+                            <p>20:00</p>
+                        </div>
+                    </div>
+                    <div class="row px-2">
+                        <div class="col-4">
+                            <p>Domingo</p>
+                        </div>
+                        <div class="col-4">
+                            <p>08:00</p>
+                        </div>
+                        <div class="col-4">
+                            <p>20:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 pb-2">
+                    <h3 class="text-bold-600 pb-1 h5"><i class="far fa-address-book mr-1"></i>Dados de contato</h3>
+                    <div class="row px-2">
+                        <div class="col-12">
+                            <p><a href="#" class="secondary"><i class="fas fa-phone-alt mr-1"></i>(11) 2345-5432</a></p>
+                            <p><a href="#" class="secondary"><i class="fab fa-whatsapp mr-1"></i>(11) 92345-5432</a></p>
+                            <p><a href="#" class="secondary"><i class="fas fa-at mr-1"></i>contato@barbeariadosena.com.br</a></p>
+                        </div>
+                    </div>
+                    <h3 class="text-bold-600 pb-1 pt-2 h5"><i class="far fa-money-bill-alt mr-1"></i>Formas de pagamento</h3>
+                    <div class="row px-2">
+                        <div class="col-12">
+                            <p class="">Dinheiro, Cartão de crédito, Cartão de débito.</p>
+                            <div class="d-flex flex-row">
+                                <img src="/app/assets/img/dinheiro.png" style="max-width: 30px;" class="mr-1">
+                                <img src="/app/assets/img/mastercard.png" style="max-width: 30px;" class="mr-1">
+                                <img src="/app/assets/img/visa.png" style="max-width: 30px;" class="mr-1">
+                                <img src="/app/assets/img/elo.png" style="max-width: 30px;" class="mr-1">
+                                <img src="/app/assets/img/amex.png" style="max-width: 30px;" class="mr-1">
+                                <img src="/app/assets/img/diners.png" style="max-width: 30px;" class="mr-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 pb-1">
+                    <h3 class="text-bold-600 pb-1 h5"><i class="fas fa-map-marker-alt mr-1"></i>Nossa localização</h3>
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="px-2">R. Cerro Corá, 1500 - Vila Romana - São Paulo - SP - 05061-300</p>
+                            <iframe class="shadow-sm rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8953528569705!2d-46.71162058557555!3d-23.53626596654986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce562aac0fab6b%3A0x2187be28ab2f09ae!2sR.%20Cerro%20Cor%C3%A1%2C%201500%20-%20Vila%20Romana%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005061-300!5e0!3m2!1spt-BR!2sbr!4v1592758588405!5m2!1spt-BR!2sbr" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>             
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center py-1">
@@ -288,13 +417,18 @@
         
         $( function() {
 
-
+            $('.link-scroll').click( function() { 
+                var target = $(this).attr('href');
+                $('#nav').removeClass('show animate__animated animate__fadeIn')
+                $('html, body').animate({ scrollTop: $(target).offset().top - 80 }, 1500);
+            } );
 
         })
 
         function showMenuMobile() {
             $('#nav').toggleClass('show animate__animated animate__fadeIn')
         }
+
 
     </script>
 
