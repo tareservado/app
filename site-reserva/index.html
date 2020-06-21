@@ -40,30 +40,45 @@
 
 <body class="fixed-navbar">
 
-    <header class="w-100 bg-dark fixed-top shadow">
+    <header class="w-100 fixed-top shadow bg-primary white">
         <div class="container">
             <div class="row py-1">
                 <div class="col-12 col-sm-4 d-flex flex-row align-items-center justify-content-center justify-content-sm-start">
-                    <h1 class="mb-0 h3 h2-sm text-bold-600 white">Barbearia do Sena</h1>
+                    <h1 class="mb-0 h3 h2-sm text-bold-600">Barbearia do Sena</h1>
                     <button class="btn p-0 font-medium-3 d-block d-sm-none ml-auto white" onclick="showMenuMobile()"><i class="fas fa-bars"></i></button>
                 </div>
                 <div class="col-12 col-sm-8 pt-2 pt-sm-0" id="nav">
                     <nav class="d-flex flex-column flex-md-row justify-content-end align-items-sm-center">
-                        <a class="nav-link mx-sm-1 text-bold-600 white link-scroll" href="#servicos"><i class="fas fa-bars mr-1"></i>Nossos serviços</a>
-                        <a class="nav-link mx-sm-1 text-bold-600 white link-scroll" href="#maisinfo"><i class="fas fa-bars mr-1"></i>Mais informações</a>
-                        <a class="nav-link mx-sm-1 text-bold-600 white link-scroll" href="#maisinfo"><i class="fas fa-bars mr-1"></i>Contato</a>
+                        <a class="nav-link mx-sm-1 text-bold-600 link-scroll" href="#servicos"><i class="fas fa-bars mr-1"></i>Nossos serviços</a>
+                        <a class="nav-link mx-sm-1 text-bold-600 link-scroll" href="#maisinfo"><i class="fas fa-bars mr-1"></i>Mais informações</a>
+                        <a class="nav-link mx-sm-1 text-bold-600 link-scroll" href="#maisinfo"><i class="fas fa-bars mr-1"></i>Contato</a>
+                        <select class="custom-select dark" id="changeColor" style="width: 150px;">
+                            <option selected="" value="primary">Verde Água</option>
+                            <option value="success">Verde</option>
+                            <option value="teal">Verde escuro</option>
+                            <option value="danger">Vermelho claro</option>
+                            <option value="red">Vermelho</option>
+                            <option value="warning">Laranja</option>
+                            <option value="yellow">Amarelo</option>
+                            <option value="amber">Amarelo escuro</option>
+                            <option value="blue">Azul</option>
+                            <option value="info">Azul Claro</option>
+                            <option value="pink">Rosa</option>
+                            <option value="purple">Roxo</option>
+                            <option value="blue-grey">Cinza</option>
+                        </select>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="w-100 bg-white pt-3">
+    <main class="w-100 pt-3">
         <div class="container pb-3">
             <div class="row">
                 <div class="col-12 col-sm-7 order-2 order-sm-1 text-center text-sm-left">
                     <h2 class="h1 titulo pt-sm-3 py-1 pr-2">Nós da Barbearia do Sena buscamos oferecer o melhor serviço e atendimento aos nossos clientes.</h2>
-                    <button class="btn btn-outline-dark shadow-sm btn-lg text-bold-600 link-scroll" href="#destaques">Conheça nossos serviços<i class="fa fa-caret-down ml-1"></i></button>
+                    <button class="btn btn-outline-primary shadow-sm btn-lg text-bold-600 link-scroll" href="#destaques">Conheça nossos serviços<i class="fa fa-caret-down ml-1"></i></button>
                 </div>    
                 <div class="col-12 col-sm-5 order-1 order-sm-2">
                     <img class="img-fluid" src="/app/assets/svg/barber.svg">
@@ -86,7 +101,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                                 <p class="float-left"><i class="far fa-clock"></i> 30 minutos</p>
                                 <p class="float-right"><i class="far fa-money-bill-alt"></i> R$ 45,00</p>
-                                <button class="btn btn-outline-dark text-bold-600 btn-block font-medium-2"><i class="fa fa-calendar"></i> Reservar horário</button>
+                                <button class="btn btn-outline-primary text-bold-600 shadow-sm btn-block font-medium-2"><i class="fa fa-calendar"></i> Reservar horário</button>
                             </div>
                         </div>
                     </div>
@@ -100,7 +115,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                                 <p class="float-left"><i class="far fa-clock"></i> 30 minutos</p>
                                 <p class="float-right"><i class="far fa-money-bill-alt"></i> R$ 45,00</p>
-                                <button class="btn btn-outline-dark text-bold-600 btn-block font-medium-2"><i class="fa fa-calendar"></i> Reservar horário</button>
+                                <button class="btn btn-outline-primary text-bold-600 shadow-sm btn-block font-medium-2"><i class="fa fa-calendar"></i> Reservar horário</button>
                             </div>
                         </div>
                     </div>
@@ -114,7 +129,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                                 <p class="float-left"><i class="far fa-clock"></i> 30 minutos</p>
                                 <p class="float-right"><i class="far fa-money-bill-alt"></i> R$ 45,00</p>
-                                <button class="btn btn-outline-dark text-bold-600 btn-block font-medium-2"><i class="fa fa-calendar"></i> Reservar horário</button>
+                                <button class="btn btn-outline-primary text-bold-600 shadow-sm btn-block font-medium-2"><i class="fa fa-calendar"></i> Reservar horário</button>
                             </div>
                         </div>
                     </div>
@@ -148,7 +163,7 @@
                                         <p class="mb-0 float-right float-sm-none"><i class="far fa-money-bill-alt"></i> R$ 45,00</p>
                                     </div>
                                     <div class="col-12 col-sm-2 text-sm-right pl-sm-0">
-                                        <button class="btn btn-outline-dark text-bold-600 btn-block"><i class="fa fa-calendar"></i> Reservar horário</button>
+                                        <button class="btn btn-outline-primary text-bold-600 shadow-sm btn-block"><i class="fa fa-calendar"></i> Reservar horário</button>
                                     </div>
                                 </div>
                             </div>
@@ -173,7 +188,7 @@
                                         <p class="mb-0 float-right float-sm-none"><i class="far fa-money-bill-alt"></i> R$ 45,00</p>
                                     </div>
                                     <div class="col-12 col-sm-2 text-sm-right pl-sm-0">
-                                        <button class="btn btn-outline-dark text-bold-600 btn-block"><i class="fa fa-calendar"></i> Reservar horário</button>
+                                        <button class="btn btn-outline-primary text-bold-600 shadow-sm btn-block"><i class="fa fa-calendar"></i> Reservar horário</button>
                                     </div>
                                 </div>
                             </div>
@@ -198,7 +213,7 @@
                                         <p class="mb-0 float-right float-sm-none"><i class="far fa-money-bill-alt"></i> R$ 45,00</p>
                                     </div>
                                     <div class="col-12 col-sm-2 text-sm-right pl-sm-0">
-                                        <button class="btn btn-outline-dark text-bold-600 btn-block"><i class="fa fa-calendar"></i> Reservar horário</button>
+                                        <button class="btn btn-outline-primary text-bold-600 shadow-sm btn-block"><i class="fa fa-calendar"></i> Reservar horário</button>
                                     </div>
                                 </div>
                             </div>
@@ -223,7 +238,7 @@
                                         <p class="mb-0 float-right float-sm-none"><i class="far fa-money-bill-alt"></i> R$ 45,00</p>
                                     </div>
                                     <div class="col-12 col-sm-2 text-sm-right pl-sm-0">
-                                        <button class="btn btn-outline-dark text-bold-600 btn-block"><i class="fa fa-calendar"></i> Reservar horário</button>
+                                        <button class="btn btn-outline-primary text-bold-600 shadow-sm btn-block"><i class="fa fa-calendar"></i> Reservar horário</button>
                                     </div>
                                 </div>
                             </div>
@@ -248,7 +263,7 @@
                                         <p class="mb-0 float-right float-sm-none"><i class="far fa-money-bill-alt"></i> R$ 45,00</p>
                                     </div>
                                     <div class="col-12 col-sm-2 text-sm-right pl-sm-0">
-                                        <button class="btn btn-outline-dark text-bold-600 btn-block"><i class="fa fa-calendar"></i> Reservar horário</button>
+                                        <button class="btn btn-outline-primary text-bold-600 shadow-sm btn-block"><i class="fa fa-calendar"></i> Reservar horário</button>
                                     </div>
                                 </div>
                             </div>
@@ -256,20 +271,20 @@
                     </div> 
                 </div>                                   
             </div>
-            <div class="d-flex flex-row align-items-center justify-content-center justify-content-sm-end mt-2">
-                <a href="#" class="p-1 secondary rounded bg-blue-grey bg-lighten-5"><i class="fa fa-caret-left"></i></a>
-                <a href="#" class="ml-1 p-1 secondary rounded bg-blue-grey bg-lighten-4 text-bold-600">01</a>
-                <a href="#" class="ml-1 p-1 secondary rounded bg-blue-grey bg-lighten-5">02</a>
-                <a href="#" class="ml-1 p-1 secondary rounded bg-blue-grey bg-lighten-5">03</a>
-                <a href="#" class="ml-1 p-1 secondary rounded bg-blue-grey bg-lighten-5">04</a>
-                <a href="#" class="ml-1 p-1 secondary rounded bg-blue-grey bg-lighten-5">05</a>
-                <a href="#" class="ml-1 p-1 secondary rounded bg-blue-grey bg-lighten-5"><i class="fa fa-caret-right"></i></a>
+            <div class="d-flex flex-row align-items-center justify-content-center justify-content-sm-end mt-2 pagination">
+                <a href="#" class="rounded border-primary dark"><i class="fa fa-caret-left"></i></a>
+                <a href="#" class="rounded border-primary bg-primary white">01</a>
+                <a href="#" class="rounded border-primary dark">02</a>
+                <a href="#" class="rounded border-primary dark">03</a>
+                <a href="#" class="rounded border-primary dark">04</a>
+                <a href="#" class="rounded border-primary dark">05</a>
+                <a href="#" class="rounded border-primary dark"><i class="fa fa-caret-right"></i></a>
             </div>
         </div>
     </main>
 
-    <footer class="w-100 bg-dark" id="maisinfo">
-        <div class="container-fluid px-sm-3 bg-blue-grey bg-lighten-5 pt-3 text-left">
+    <footer class="w-100 bg-primary white" id="maisinfo">
+        <div class="container-fluid px-sm-3 pt-3 text-left">
             <div class="row">
                 <div class="col-12 col-sm-4 pb-2">
                     <h3 class="text-bold-600 pb-1 h5"><i class="far fa-clock mr-1"></i>Horário de funcionamento</h3>
@@ -351,13 +366,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4 pb-2">
+                <div class="col-12 col-sm-4 pb-3">
                     <h3 class="text-bold-600 pb-1 h5"><i class="far fa-address-book mr-1"></i>Dados de contato</h3>
                     <div class="row px-2">
                         <div class="col-12">
-                            <p><a href="#" class="secondary"><i class="fas fa-phone-alt mr-1"></i>(11) 2345-5432</a></p>
-                            <p><a href="#" class="secondary"><i class="fab fa-whatsapp mr-1"></i>(11) 92345-5432</a></p>
-                            <p><a href="#" class="secondary"><i class="fas fa-at mr-1"></i>contato@barbeariadosena.com.br</a></p>
+                            <p><a href="#" class=""><i class="fas fa-phone-alt mr-1"></i>(11) 2345-5432</a></p>
+                            <p><a href="#" class=""><i class="fab fa-whatsapp mr-1"></i>(11) 92345-5432</a></p>
+                            <p><a href="#" class=""><i class="fas fa-at mr-1"></i>contato@barbeariadosena.com.br</a></p>
                         </div>
                     </div>
                     <h3 class="text-bold-600 pb-1 pt-2 h5"><i class="far fa-money-bill-alt mr-1"></i>Formas de pagamento</h3>
@@ -375,7 +390,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4 pb-1">
+                <div class="col-12 col-sm-4 pb-3">
                     <h3 class="text-bold-600 pb-1 h5"><i class="fas fa-map-marker-alt mr-1"></i>Nossa localização</h3>
                     <div class="row">
                         <div class="col-12">
@@ -386,7 +401,7 @@
                 </div>             
             </div>
         </div>
-        <div class="container">
+        <div class="container-fluid bg-dark">
             <div class="row">
                 <div class="col-12 text-center py-1">
                     <img src="/app/app-assets/images/logo/icone.png" style="max-height: 25px;">
@@ -423,7 +438,22 @@
                 $('html, body').animate({ scrollTop: $(target).offset().top - 80 }, 1500);
             } );
 
+            $('#changeColor').change( function() {
+                changeColor($('#changeColor').val())
+            })
+
         })
+
+        var corAtual = 'primary'
+        function changeColor(novaCor) {
+            var a = $('[class*="' + corAtual +'"]')
+            var i;
+            for (i = 0; i < a.length; i++) {
+                var b = $(a[i]).attr('class').replace(corAtual, novaCor).replace(corAtual, novaCor)
+                $(a[i]).attr('class', b)
+            }
+            corAtual = novaCor
+        }
 
         function showMenuMobile() {
             $('#nav').toggleClass('show animate__animated animate__fadeIn')

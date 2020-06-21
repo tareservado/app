@@ -25,3 +25,15 @@
     border-radius: 10px;
   }
 
+  .pagination a {
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.white *, .white *:hover {
+  color: #FFFFFF;
+}
+
+.dark, .dark:hover, .dark *, .dark *:hover {
+  color: #1b2942;
+}
