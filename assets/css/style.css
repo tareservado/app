@@ -1,195 +1,27 @@
-html body {
-    background-color: #f5f8fa;
-}
+@media only screen and (max-width: 576px) {
+    #nav {
+      display: none;
+    }
+    .show {display: block !important;}
+    .titulo {font-size: 1.6rem;}
+  }
 
-#reportrange {
-    cursor: pointer;
-    margin-left: 3px;
-    background: #fff;
-    text-align: center;
-}
+.titulo {line-height: 1.6;}
 
-.text-muted {
-    color: #888 !important;
-}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent ;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+  }
 
-.table th, .table td {
-    padding: 10px;
-    vertical-align: middle;
-}
-
-#recent-orders .btn {
-    padding: 8px;
-}
-
-.btn-sm, .btn-group-sm > .btn {
-    padding: 6px 12px;
-}
-
-.header-navbar .navbar-header .navbar-brand .brand-logo {
-    vertical-align: bottom;
-    max-height: 30px;
-}
-
-.header-navbar .navbar-header .navbar-brand .brand-text {
-    vertical-align: bottom;
-    max-height: 30px;
-}
-
-.navbar-dark {
-    background: #32465a;
-}
-
-.main-menu.menu-light .navigation li a {
-    color: #32465a;
-    font-weight: 500;
-}
-
-.main-menu.menu-light .navigation li.active {
-    border-left: 4px solid #ff6d5a;
-}
-
-.main-menu.menu-light .navigation > li.active > a {
-    color: #ff6d5a;   
-}
-
-.main-menu.menu-light .navigation > li.open {
-    border-left: 4px solid #ff6d5a;
-}
-
-.main-menu.menu-light .navigation > li ul .active > a {
-    color: #ff6d5a;
-}
-
-body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content > span.menu-title, body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content a.menu-title {
-    background-color: #ff6d5a;
-}
-
-.select2-container--default .select2-selection--multiple .select2-selection__choice {
-    font-size: 12px;
-    margin-top: 2px !important;
-}
-
-.custom-file-label, .select2-container--default .select2-selection--multiple, .select2-container--default .select2-selection--single {
-    border-color: #ccd6e6;
-}
-
-.custom-file-label::after {
-    content: "Escolher arquivo";
-}
-
-.form-control:focus {
-    border-color: #32465A;
-}
-
-body.vertical-layout.vertical-menu.menu-expanded .main-menu .navigation > li > a > i {
-    width: 20px;
-    text-align: center;
-}
-
-body.vertical-layout.vertical-menu.menu-collapsed .main-menu .navigation > li > a, body.vertical-layout.vertical-menu.menu-collapsed .main-menu .navigation > li.open > a {
-    padding: 10px 0px !important;
-    text-align: center;
-}
-
-.table-horario-empresa th, .table-horario-empresa td {
-    padding: 5px;
-    text-align: center;
-}
-
-.table-horario-empresa input::-webkit-input-placeholder {
-    text-align: center;
-}
-
-.shepherd-content {
-    background: #e6fcff !important;
-    color: #1b2942 !important;
-}
-
-.shepherd-element.shepherd-element-attached-bottom.shepherd-element-attached-center .shepherd-arrow, .shepherd-element.shepherd-pinned-top .shepherd-arrow {
-    border-top-color: #c4f6fc !important;
-}
-
-.shepherd-element.shepherd-element-attached-top.shepherd-element-attached-center.shepherd-has-title .shepherd-arrow {
-    border-bottom-color: #c4f6fc !important;
-}
-
-.shepherd-element.shepherd-element-attached-middle.shepherd-element-attached-left .shepherd-arrow, .shepherd-element.shepherd-pinned-right .shepherd-arrow {
-    border-right-color: #c4f6fc !important;
-}
-
-.shepherd-text {
-    font-size: 13px;
-    line-height: 150%;
-    padding: 0 15px 15px;
-}
-
-.shepherd-title {
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.shepherd-has-title .shepherd-content .shepherd-header {
-    padding: 7px 15px 5px;
-    background: #e6fcff !important;
-    color: #1b2942 !important;
-}
-
-.btn-white, .btn-white:hover, .btn-white:focus, .btn-white:active {
-    border-color: !important;
-    background-color: #FFFFFF !important;
-    color: #333 !important;
-}
-
-.fab, .far {
-    font-weight: 600;
-}
-
-.painel-agenda-item.dropdown-toggle::after {
-    color: rgba(0, 0, 0, 0.5) !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-.painel-agenda-hora {
-    padding-top: 8px;
-}
-.painel-agenda-hora, .painel-agenda-slot {
-    height: 33px !important;
-}
-
-.p-c1 { padding: 5px !important;}
-.pl-c1, .px-c1 { padding-left: 5px !important;}
-.pr-c1, .px-c1 { padding-right: 5px !important;}
-.pt-c1, .py-c1 { padding-top: 5px !important;}
-.pb-c1, .py-c1 { padding-bottom: 5px !important;}
-
-.m-c1 { margin: 5px !important;}
-.ml-c1, .mx-c1 { margin-left: 5px !important;}
-.mr-c1, .mx-c1 { margin-right: 5px !important;}
-.mt-c1, .my-c1 { margin-top: 5px !important;}
-.mb-c1, .my-c1 { margin-bottom: 5px !important;}
-
-.p-1 { padding: 10px !important;}
-.pl-1, .px-1 { padding-left: 10px !important;}
-.pr-1, .px-1 { padding-right: 10px !important;}
-.pt-1, .py-1 { padding-top: 10px !important;}
-.pb-1, .py-1 { padding-bottom: 10px !important;}
-
-.m-1 { margin: 10px !important;}
-.ml-1, .mx-1 { margin-left: 10px !important;}
-.mr-1, .mx-1 { margin-right: 10px !important;}
-.mt-1, .my-1 { margin-top: 10px !important;}
-.mb-1, .my-1 { margin-bottom: 10px !important;}
-
-.p-2 { padding: 15px !important;}
-.pl-2, .px-2 { padding-left: 15px !important;}
-.pr-2, .px-2 { padding-right: 15px !important;}
-.pt-2, .py-2 { padding-top: 15px !important;}
-.pb-2, .py-2 { padding-bottom: 15px !important;}
-
-.m-2 { margin: 15px !important;}
-.ml-2, .mx-2 { margin-left: 15px !important;}
-.mr-2, .mx-2 { margin-right: 15px !important;}
-.mt-2, .my-2 { margin-top: 15px !important;}
-.mb-2, .my-2 { margin-bottom: 15px !important;}

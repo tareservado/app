@@ -6,12 +6,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>Nome da Empresa - tareservado</title>
+    <title>Barbearia do Sena - tareservado</title>
     <link rel="apple-touch-icon" href="../app-assets/images/logo/icone.png">
     <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/logo/icone.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
     <script src="https://kit.fontawesome.com/99bf7606df.js" crossorigin="anonymous"></script>
-
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
@@ -31,6 +30,7 @@
 
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <!-- END: Custom CSS-->
 
 </head>
@@ -38,99 +38,233 @@
 
 <!-- BEGIN: Body-->
 
-<body class="horizontal-layout horizontal-menu horizontal-menu-padding 1-columns" data-open="click" data-menu="horizontal-menu" data-col="1-columns">
+<body class="fixed-navbar">
 
-    <!-- BEGIN: Main Menu-->
-    <div class="header-navbar navbar-expand-sm navbar navbar-horizontal navbar-fixed navbar-light navbar-without-dd-arrow navbar-shadow menu-border" role="navigation" data-menu="menu-wrapper">
-        <!-- Horizontal menu content-->
-        <div class="navbar-container main-menu-content container center-layout" data-menu="menu-container">
-            <!-- include ../includes/mixins-->
-            <ul class="nav navbar-nav" id="main-menu-navigation" data-menu="menu-navigation">
-                <!-- <li class="nav-item"><a class="nav-link" href="#"><i class="feather icon-home"></i><span>Home</span></a></li> -->
-            </ul>
-        </div>
-        <!-- /horizontal menu content-->
-    </div>
-    <!-- END: Main Menu-->
-
-    <!-- BEGIN: Content-->
-    <div class="app-content container center-layout mt-2">
-        <div class="content-overlay"></div>
-        <div class="content-wrapper">
-            <div class="content-header row">
-            </div>
-            <section class="content-body">
-                <div class="row">
-                    <div class="col-sm-7">
-                        <h2 class="pt-3 pb-2 h4 text-bold-700">Nome ou Logo da Empresa</h2>
-                        <p class="">
-                            Gummi bears I love oat cake gingerbread donut cotton candy pie biscuit tart. Chocolate cake chocolate cake I love marzipan cookie macaroon. Tart I love I love carrot cake carrot cake chupa chups caramels. Carrot cake pastry cotton candy.
-                        </p>
-                        <p class="pb-2">
-                            Dessert I love brownie biscuit topping I love chocolate cake gingerbread jelly beans. Chocolate cake cake cheesecake. Chocolate cake pastry macaroon.
-                        </p>
-                        <button type="button" class="d-inline btn btn-sm btn-white py-1 rounded font-small-3 shadow-sm"><i class="fas fa-phone-alt mr-c1 blue font-medium-1"></i>(99) 99999-9999</button>
-                        <button type="button" class="d-inline btn btn-sm btn-white py-1 rounded font-small-3 shadow-sm"><i class="fab fa-whatsapp mr-c1 primary font-medium-1 text-bold-600"></i>(99) 99999-9999</button>
-                        <button type="button" class="d-inline btn btn-sm btn-white py-1 rounded font-small-3 shadow-sm"><i class="fas fa-map-marker-alt mr-c1 danger font-medium-1 text-bold-600"></i>ver no mapa</button>                    
-                    </div>
-                    <div class="col-sm-5">
-                        <img class="img-fluid" src="../app-assets/images/elements/salao-beleza.png">
-                    </div>
+    <header class="w-100 bg-dark fixed-top shadow">
+        <div class="container">
+            <div class="row py-1">
+                <div class="col-12 col-sm-4 d-flex flex-row align-items-center justify-content-center justify-content-sm-start">
+                    <h1 class="mb-0 h3 h2-sm text-bold-600 white">Barbearia do Sena</h1>
+                    <button class="btn p-0 font-medium-3 d-block d-sm-none ml-auto white" onclick="showMenuMobile()"><i class="fas fa-bars"></i></button>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <h3 class="py-2 text-bold-600 font-medium-1">Escolha os serviços que deseja fazer a reserva:</h3>
-                        <div class="d-flex flex-row">
-                            <div class="card mx-1">
-                                <div class="card-content">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Corte de Cabelo Feminino</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-outline-pink">Fazer agendamento</a>
-                                    </div>
-                                </div>
+                <div class="col-12 col-sm-8 pt-2 pt-sm-0" id="nav">
+                    <nav class="d-flex flex-column flex-md-row justify-content-end align-items-sm-center">
+                        <a class="nav-link mx-sm-1 text-bold-600 white" href="#"><i class="fas fa-bars mr-1"></i>Serviços</a>
+                        <a class="nav-link mx-sm-1 text-bold-600 white" href="#"><i class="fas fa-bars mr-1"></i>Profissionais</a>
+                        <a class="nav-link mx-sm-1 text-bold-600 white" href="#"><i class="fas fa-bars mr-1"></i>Mais informações</a>
+                        <a class="nav-link mx-sm-1 text-bold-600 white" href="#"><i class="fas fa-bars mr-1"></i>Contato</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="w-100 bg-white pt-2">
+        <div class="container pb-3">
+            <div class="row">
+                <div class="col-12 col-sm-7 order-2 order-sm-1 text-center text-sm-left">
+                    <h2 class="h1 titulo pt-sm-3 py-1 pr-2">Nós da Barbearia do Sena buscamos oferecer o melhor serviço e atendimento aos nossos clientes.</h2>
+                    <button class="btn btn-outline-dark shadow btn-lg text-bold-600">Conheça nossos serviços<i class="fa fa-caret-down ml-1"></i></button>
+                </div>    
+                <div class="col-12 col-sm-5 order-1 order-sm-2">
+                    <img class="img-fluid" src="/app/assets/svg/barber.svg">
+                </div>             
+            </div>
+        </div>
+        <div class="container pb-3">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-bold-600 pb-2"><i class="fas fa-tags mr-1"></i>Destaques</h3>
+                </div>
+            </div>
+            <div class="row match-height">
+               <div class="col-12 col-sm-4">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="/app/assets/img/barber1.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="text-bold-600">Corte de Cabelo</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                <p class="float-left"><i class="far fa-clock"></i> 30 minutos</p>
+                                <p class="float-right"><i class="far fa-money-bill-alt"></i> R$ 45,00</p>
+                                <button class="btn btn-outline-dark text-bold-600 btn-block font-medium-2"><i class="fa fa-calendar"></i> Reservar horário</button>
                             </div>
-                            <div class="card mx-1">
-                                <div class="card-content">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Corte de Cabelo Masculino</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-outline-pink">Fazer agendamento</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card mx-1">
-                                <div class="card-content">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Corte de Cabelo Infantil</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-outline-pink">Fazer agendamento</a>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="col-12 col-sm-4">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="/app/assets/img/barber2.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="text-bold-600">Corte de Cabelo</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                <p class="float-left"><i class="far fa-clock"></i> 30 minutos</p>
+                                <p class="float-right"><i class="far fa-money-bill-alt"></i> R$ 45,00</p>
+                                <button class="btn btn-outline-dark text-bold-600 btn-block font-medium-2"><i class="fa fa-calendar"></i> Reservar horário</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <section class="row">
-                    
-                </section>
-            </section>
+                <div class="col-12 col-sm-4">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="/app/assets/img/barber3.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="text-bold-600">Corte de Cabelo</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                <p class="float-left"><i class="far fa-clock"></i> 30 minutos</p>
+                                <p class="float-right"><i class="far fa-money-bill-alt"></i> R$ 45,00</p>
+                                <button class="btn btn-outline-dark text-bold-600 btn-block font-medium-2"><i class="fa fa-calendar"></i> Reservar horário</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
         </div>
-    </div>
-    <!-- END: Content-->
+        <div class="container pb-3">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-bold-600 pb-2"><i class="fas fa-tags mr-1"></i>Nossos serviços</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-1">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-12 pb-1 pb-sm-0 col-sm-4">
+                                        <h3 class="mb-0 h5 text-bold-600"><i class="fa fa-caret-right mr-1"></i>Nome do Serviço 01</h3>
+                                    </div>
+                                    <div class="col-12 pb-1 pb-sm-0 col-sm-4">
+                                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                    </div>
+                                    <div class="col-12 pb-1 pb-sm-0 col-sm-2 text-sm-center">
+                                        <p class="mb-0 float-left float-sm-none"><i class="far fa-clock"></i> 30 minutos</p>
+                                        <p class="mb-0 float-right float-sm-none"><i class="far fa-money-bill-alt"></i> R$ 45,00</p>
+                                    </div>
+                                    <div class="col-12 col-sm-2 text-sm-right pl-sm-0">
+                                        <button class="btn btn-outline-dark text-bold-600 btn-block"><i class="fa fa-calendar"></i> Reservar horário</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>                                   
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-1">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-12 pb-1 pb-sm-0 col-sm-4">
+                                        <h3 class="mb-0 h5 text-bold-600"><i class="fa fa-caret-right mr-1"></i>Nome do Serviço 01</h3>
+                                    </div>
+                                    <div class="col-12 pb-1 pb-sm-0 col-sm-4">
+                                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                    </div>
+                                    <div class="col-12 pb-1 pb-sm-0 col-sm-2 text-sm-center">
+                                        <p class="mb-0 float-left float-sm-none"><i class="far fa-clock"></i> 30 minutos</p>
+                                        <p class="mb-0 float-right float-sm-none"><i class="far fa-money-bill-alt"></i> R$ 45,00</p>
+                                    </div>
+                                    <div class="col-12 col-sm-2 text-sm-right pl-sm-0">
+                                        <button class="btn btn-outline-dark text-bold-600 btn-block"><i class="fa fa-calendar"></i> Reservar horário</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>                                   
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-1">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-12 pb-1 pb-sm-0 col-sm-4">
+                                        <h3 class="mb-0 h5 text-bold-600"><i class="fa fa-caret-right mr-1"></i>Nome do Serviço 01</h3>
+                                    </div>
+                                    <div class="col-12 pb-1 pb-sm-0 col-sm-4">
+                                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                    </div>
+                                    <div class="col-12 pb-1 pb-sm-0 col-sm-2 text-sm-center">
+                                        <p class="mb-0 float-left float-sm-none"><i class="far fa-clock"></i> 30 minutos</p>
+                                        <p class="mb-0 float-right float-sm-none"><i class="far fa-money-bill-alt"></i> R$ 45,00</p>
+                                    </div>
+                                    <div class="col-12 col-sm-2 text-sm-right pl-sm-0">
+                                        <button class="btn btn-outline-dark text-bold-600 btn-block"><i class="fa fa-calendar"></i> Reservar horário</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>                                   
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-1">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-12 pb-1 pb-sm-0 col-sm-4">
+                                        <h3 class="mb-0 h5 text-bold-600"><i class="fa fa-caret-right mr-1"></i>Nome do Serviço 01</h3>
+                                    </div>
+                                    <div class="col-12 pb-1 pb-sm-0 col-sm-4">
+                                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                    </div>
+                                    <div class="col-12 pb-1 pb-sm-0 col-sm-2 text-sm-center">
+                                        <p class="mb-0 float-left float-sm-none"><i class="far fa-clock"></i> 30 minutos</p>
+                                        <p class="mb-0 float-right float-sm-none"><i class="far fa-money-bill-alt"></i> R$ 45,00</p>
+                                    </div>
+                                    <div class="col-12 col-sm-2 text-sm-right pl-sm-0">
+                                        <button class="btn btn-outline-dark text-bold-600 btn-block"><i class="fa fa-calendar"></i> Reservar horário</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>                                   
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-1">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-12 pb-1 pb-sm-0 col-sm-4">
+                                        <h3 class="mb-0 h5 text-bold-600"><i class="fa fa-caret-right mr-1"></i>Nome do Serviço 01</h3>
+                                    </div>
+                                    <div class="col-12 pb-1 pb-sm-0 col-sm-4">
+                                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                    </div>
+                                    <div class="col-12 pb-1 pb-sm-0 col-sm-2 text-sm-center">
+                                        <p class="mb-0 float-left float-sm-none"><i class="far fa-clock"></i> 30 minutos</p>
+                                        <p class="mb-0 float-right float-sm-none"><i class="far fa-money-bill-alt"></i> R$ 45,00</p>
+                                    </div>
+                                    <div class="col-12 col-sm-2 text-sm-right pl-sm-0">
+                                        <button class="btn btn-outline-dark text-bold-600 btn-block"><i class="fa fa-calendar"></i> Reservar horário</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>                                   
+            </div>
+        </div>
+    </main>
 
-    <div class="sidenav-overlay"></div>
-    <div class="drag-target"></div>
-
-    <!-- BEGIN: Footer-->
-    <footer class="footer undefined footer-light">
-        <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 container center-layout">
-            <span class="d-block d-md-inline-block">Copyright &copy; 2020 <a class="text-bold-800 grey darken-2" href="https://www.tareservado.com.br" target="_blank">tareservado</a></span>
-        </p>
+    <footer class="w-100 bg-dark white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="py-3"></div>
+                </div>                
+            </div>
+        </div>
     </footer>
-    <!-- END: Footer-->
-
 
     <!-- BEGIN: Vendor JS-->
     <script src="../app-assets/vendors/js/vendors.min.js"></script>
@@ -144,11 +278,24 @@
     <!-- BEGIN: Theme JS-->
     <script src="../app-assets/js/core/app-menu.js"></script>
     <script src="../app-assets/js/core/app.js"></script>
-    <script src="../app-assets/js/scripts/customizer.js"></script>
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
     <!-- END: Page JS-->
+
+    <script>
+        
+        $( function() {
+
+
+
+        })
+
+        function showMenuMobile() {
+            $('#nav').toggleClass('show animate__animated animate__fadeIn')
+        }
+
+    </script>
 
 </body>
 <!-- END: Body-->
