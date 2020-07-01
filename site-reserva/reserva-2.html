@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html class="loading" lang="pt" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Barbearia do Sena - tareservado</title>
+    <link rel="apple-touch-icon" href="../app-assets/images/logo/icone.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/logo/icone.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/99bf7606df.js" crossorigin="anonymous"></script>
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/forms/selects/select2.min.css">
+
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/components.css">
+    <!-- END: Theme CSS-->
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/horizontal-menu.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/core/colors/palette-gradient.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <!-- END: Custom CSS-->
+
+    <style>
+         @media screen and (max-device-width: 480px) {
+            .dia-semana div, .dia-mes div { padding: 0 12px !important; margin: 0 3px !important; }
+            .horario button { padding: 10px 12px !important; margin: 3px !important;}
+            .calendario { overflow-x: scroll; }
+            .content-agenda { border-radius: 0 !important; }
+            .step {position: unset !important; margin-left: unset !important; margin-bottom: -25px; z-index: 100;}
+         }
+
+        .step {width: 50px; height: 50px; line-height: 50px; position: absolute; margin-left: -60px; }
+        .dia-semana div, .dia-mes div { flex: 1 1; padding: 0 5px; margin: 0 2px;}
+        .blocohora div { flex: 1 1; }
+        .horario button { padding: 5px; margin: 2px; }
+    </style>
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="bg-primary bg-accent-1">
+
+    <main class="w-100">
+        <div class="container-fluid" style="height: 100vh;">
+            <div class="row match-height h-100">
+                <div class="col-sm-8 col-12">
+                    <div class="row px-sm-3 py-sm-2">
+                        <div class="col-12 shadow bg-primary white d-block d-sm-none">
+                            <h1 class="h3 text-bold-600 text-center my-1">Barbearia do Sena</h1>
+                            <div class="bg-primary bg-darken-1 p-1 rounded-lg text-center">
+                                <h4 class="">Corte de cabelo</h4>
+                                <h5 class="mb-0"><i class="far fa-clock"></i> 30 minutos <i class="ml-2 far fa-money-bill-alt"></i> R$ 45,00</h5>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col-12">
+                                    <div class="d-flex flex-row justify-content-between px-2">
+                                        <div class="step h3 text-bold-600 primary bg-primary bg-accent-2 rounded-pill text-center border-primary"><i class="fa fa-check primary" aria-hidden="true"></i></div>
+                                        <div class="step h3 text-bold-600 primary bg-white rounded-pill text-center shadow border-primary animate__animated animate__heartBeat">2</div>
+                                        <div class="step h3 text-bold-600 primary bg-primary bg-accent-1 rounded-pill text-center shadow-sm border-primary">3</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-2 pb-5 shadow round bg-white content-agenda">
+                            <div class="text-center">
+                                <i class="fa fa-calendar-check-o font-large-2 py-2" aria-hidden="true"></i>
+                                <h3 class="text-bold-600">Escolha o dia e horário</h3>
+                            </div>
+                            <div class="d-flex flex-row justify-content-end mb-1">
+                                <div class="px-1"><a href="#"><i class="fas fa-chevron-left mr-1"></i></a> <a href="#"><i class="fas fa-chevron-right ml-1"></i></a></div>
+                            </div>
+                            <div class="pb-1 mb-3 calendario">
+                                <div class="d-flex flex-row dia-mes justify-content-between text-bold-600 mb-1">
+                                    <div class="text-center flex-fill"><p class="mb-0">dom</p><p class="mb-0">28/06</p></div>
+                                    <div class="text-center flex-fill"><p class="mb-0">seg</p><p class="mb-0">29/06</p></div>
+                                    <div class="text-center flex-fill"><p class="mb-0">ter</p><p class="mb-0">30/06</p></div>
+                                    <div class="text-center flex-fill"><p class="mb-0">qua</p><p class="mb-0">01/07</p></div>
+                                    <div class="text-center flex-fill"><p class="mb-0">qui</p><p class="mb-0">02/07</p></div>
+                                    <div class="text-center flex-fill"><p class="mb-0">sex</p><p class="mb-0">03/07</p></div>
+                                    <div class="text-center flex-fill"><p class="mb-0">sab</p><p class="mb-0">04/07</p></div>
+                                </div>
+                                <div class="d-flex flex-row justify-content-between blocohora">
+                                    <div class="d-flex flex-column horario">
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">08:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">09:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">10:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">11:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">12:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">13:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">14:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">15:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">16:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">17:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">18:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">19:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">20:00</button>
+                                    </div>
+                                    <div class="d-flex flex-column horario">
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">08:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">09:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">10:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">11:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">12:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">13:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">14:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">15:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">16:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">17:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">18:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">19:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">20:00</button>
+                                    </div>
+                                    <div class="d-flex flex-column horario">
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">08:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">09:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">10:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">11:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">12:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">13:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">14:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">15:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">16:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">17:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">18:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">19:00</button>
+                                        <button class="flex-fill btn btn-outline-light disabled rounded border-light disabled border-accent-1">20:00</button>
+                                    </div>
+                                    <div class="d-flex flex-column horario">
+                                        <button class="flex-fill btn btn-outline-primary active rounded border-primary border-accent-1"><del>08:00</del></button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">09:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">10:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">11:00</button>
+                                        <button class="flex-fill btn btn-outline-primary active rounded border-primary border-accent-1"><del>12:00</del></button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">13:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">14:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">15:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">16:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">17:00</button>
+                                        <button class="flex-fill btn btn-outline-primary active rounded border-primary border-accent-1"><del>18:00</del></button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">19:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">20:00</button>
+                                    </div>
+                                    <div class="d-flex flex-column horario">
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">08:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">09:00</button>
+                                        <button class="flex-fill btn btn-outline-primary active rounded border-primary border-accent-1"><del>10:00</del></button>
+                                        <button class="flex-fill btn btn-outline-primary active rounded border-primary border-accent-1"><del>11:00</del></button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">12:00</button>
+                                        <button class="flex-fill btn btn-outline-primary active rounded border-primary border-accent-1"><del>13:00</del></button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">14:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">15:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">16:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">17:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">18:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">19:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">20:00</button>
+                                    </div>
+                                    <div class="d-flex flex-column horario">
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">08:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">09:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">10:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">11:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">12:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">13:00</button>
+                                        <button class="flex-fill btn btn-outline-primary active rounded border-primary border-accent-1"><del>14:00</del></button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">15:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">16:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">17:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">18:00</button>
+                                        <button class="flex-fill btn btn-outline-primary active rounded border-primary border-accent-1"><del>19:00</del></button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">20:00</button>
+                                    </div>
+                                    <div class="d-flex flex-column horario">
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">08:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">09:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">10:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">11:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">12:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">13:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">14:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">15:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">16:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">17:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">18:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">19:00</button>
+                                        <button class="flex-fill btn btn-outline-primary rounded border-primary border-accent-1">20:00</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a name="" id="" class="btn btn-outline-primary shadow-sm" href="reserva-1.html" style="position: absolute; bottom: 25px; left: 25px;"><i class="fa fa-caret-left mr-1"></i>Voltar</a>
+                            <a name="" id="" class="btn btn-primary shadow-sm" href="reserva-3.html" style="position: absolute; bottom: 25px; right: 25px;">Avançar<i class="fa fa-caret-right ml-1"></i></a>
+                        </div>
+                        <div class="col-12 shadow bg-primary white p-1 text-center d-block d-sm-none">
+                            <img src="/app/app-assets/images/logo/icone.png" style="max-height: 25px;">
+                            <img src="/app/app-assets/images/logo/logo-nome.png" style="max-height: 25px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-none d-sm-block bg-primary white" style="position: fixed; right: 0; bottom: 0; height: 100vh;">
+                    <h1 class="h2 px-1 pt-3 text-bold-600">Barbearia do Sena</h1>
+                    <div class="bg-primary bg-darken-1 rounded p-1 mt-1 mb-3 mx-1">
+                        <h4 class="">Corte de cabelo</h4>
+                        <h5 class="mb-0"><i class="far fa-clock"></i> 30 minutos <i class="ml-2 far fa-money-bill-alt"></i> R$ 45,00</h5>
+                    </div>
+                    <div class="px-2" style="min-height: 120px;">
+                        <div class="step h3 text-bold-600 primary bg-primary bg-accent-2 rounded-pill text-center border-primary"><i class="fa fa-check primary" aria-hidden="true"></i></div>
+                        <h5 class="text-bold-600">Escolha o profissional</h5>
+                        <p class="white">Você escolheu Marcos Paulo.</p>
+                    </div>
+                    <div class="px-2" style="min-height: 120px;">
+                        <div class="step h3 text-bold-600 primary bg-white rounded-pill text-center shadow border-primary animate__animated animate__heartBeat">2</div>
+                        <h5 class="text-bold-600">Escolha o dia e horário</h5>
+                        <p class="white">Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                    <div class="px-2" style="min-height: 120px;">
+                        <div class="step h3 text-bold-600 primary bg-primary bg-accent-1 rounded-pill text-center shadow-sm border-primary">3</div>
+                        <h5 class="primary accent-1">Informe seus dados</h5>
+                        <p class="primary accent-1">Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                    <div class="row" style="position: fixed; right: 15px; bottom: 15px; z-index: 1038;">
+                        <div class="col-12">
+                            <img src="/app/app-assets/images/logo/icone.png" style="max-height: 25px;">
+                            <img src="/app/app-assets/images/logo/logo-nome.png" style="max-height: 25px;">
+                        </div>                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../app-assets/vendors/js/vendors.min.js"></script>
+    <script src="../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+
+
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../app-assets/vendors/js/ui/jquery.sticky.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../app-assets/js/core/app-menu.js"></script>
+    <script src="../app-assets/js/core/app.js"></script>
+    <script src="../app-assets/js/scripts/forms/select/form-select2.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <!-- END: Page JS-->
+
+    <script>
+        
+        $( function() {
+
+            $('.link-scroll').click( function() { 
+                var target = $(this).attr('href');
+                $('#nav').removeClass('show animate__animated animate__fadeIn')
+                $('html, body').animate({ scrollTop: $(target).offset().top - 80 }, 1500);
+            } );
+
+        })
+
+
+    </script>
+
+</body>
+<!-- END: Body-->
+
+</html>

@@ -1,39 +1,94 @@
-@media only screen and (max-width: 576px) {
-    #nav {
-      display: none;
-    }
-    .show {display: block !important;}
-    .titulo {font-size: 1.6rem;}
-  }
+/*================================================================================
+	Item Name: Stack - Responsive Admin Theme
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
 
-.titulo {line-height: 1.6;}
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
 
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-    background-color: transparent ;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    border-radius: 10px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 10px;
-  }
-
-  .pagination a {
-    padding: 10px;
-    margin: 0 5px;
+html body {
+  background-color: #f5f8fa;
 }
 
-.white *, .white *:hover {
-  color: #FFFFFF;
+.table th, .table td {
+  padding: 10px;
+  vertical-align: middle;
 }
 
-.dark, .dark:hover, .dark *, .dark *:hover {
-  color: #1b2942;
+#recent-orders .btn {
+  padding: 8px;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+  padding: 6px 12px;
+}
+
+.header-navbar .navbar-header .navbar-brand .brand-logo {
+  vertical-align: bottom;
+  max-height: 30px;
+}
+
+.header-navbar .navbar-header .navbar-brand .brand-text {
+  vertical-align: bottom;
+  max-height: 30px;
+}
+
+.navbar-dark {
+  background: #32465a;
+}
+
+.main-menu.menu-light .navigation li a {
+  color: #32465a;
+  font-weight: 500;
+}
+
+.main-menu.menu-light .navigation > li.open {
+  border-left: 4px solid #ff6d5a;
+}
+
+.main-menu.menu-light .navigation > li ul .active > a {
+  color: #ff6d5a;
+}
+
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content > span.menu-title, body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content a.menu-title {
+  background-color: #ff6d5a;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  font-size: 12px;
+  margin-top: 2px !important;
+}
+
+.custom-file-label, .select2-container--default .select2-selection--multiple, .select2-container--default .select2-selection--single {
+  border-color: #ccd6e6;
+}
+
+.custom-file-label::after {
+  content: "Escolher arquivo";
+}
+
+.form-control:focus {
+  border-color: #32465A;
+}
+
+body.vertical-layout.vertical-menu.menu-expanded .main-menu .navigation > li > a > i {
+  width: 20px;
+  text-align: center;
+}
+
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .navigation > li > a, body.vertical-layout.vertical-menu.menu-collapsed .main-menu .navigation > li.open > a {
+  padding: 10px 0px !important;
+  text-align: center;
+}
+
+.table-horario-empresa th, .table-horario-empresa td {
+  padding: 5px;
+  text-align: center;
+}
+
+.table-horario-empresa input::-webkit-input-placeholder {
+  text-align: center;
 }

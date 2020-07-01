@@ -1,0 +1,39 @@
+@media only screen and (max-width: 576px) {
+    #nav {
+      display: none;
+    }
+    .show {display: block !important;}
+    .titulo {font-size: 1.6rem;}
+  }
+
+.titulo {line-height: 1.6;}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent ;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+  }
+
+  .pagination a {
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.white *, .white *:hover {
+  color: #FFFFFF;
+}
+
+.dark, .dark:hover, .dark *, .dark *:hover {
+  color: #1b2942;
+}
