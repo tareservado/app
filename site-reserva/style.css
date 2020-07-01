@@ -6,6 +6,11 @@
     .titulo {font-size: 1.6rem;}
   }
 
+  .pagamentos img {
+    max-width: 35px;
+    border-radius: 3px;
+}
+
 .titulo {line-height: 1.6;}
 
 /* width */
